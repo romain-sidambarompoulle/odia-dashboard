@@ -77,82 +77,516 @@
   ],
   "missionsActives": [
     {
-      "id": "PA-15",
-      "nom": "fleurimont-urgences-avant-9-fevrier",
-      "filiale": "perso",
-      "phase": "1/4 - Preparation",
-      "etape": "1.1 - Audit achats materiel",
+      "id": "PA-13",
+      "nom": "cession-jonathan-fond-scm-selarl",
+      "filiale": "odia-strategie",
+      "phaseEnCours": "1/5 - Recherche Legalite & Referentiel",
+      "etapeEnCours": "1.1 - Rechercher legalite rachat propre fond via SELARL",
       "statut": "en_cours",
-      "progression": "0/11",
+      "progression": "0/17",
       "blocage": null,
-      "deadline": "2026-02-09",
-      "priorite": "DEADLINE",
+      "deadline": null,
+      "priorite": "URGENT",
       "derniereAction": "2026-01-29 - /pilote-etapes termine",
-      "description": "2 fuites, ventilation fosse, SPANC, gazon, mail Tropic Elec"
+      "descriptionCourte": "Valorisation, legalite, contrats, cloture EI, procedures pour cession Jonathan",
+      "contexte": {
+        "objectif": "Realiser la cession complete du fond de patientele et des parts de SCM de Jonathan (kine liberal en EI a l'IR) vers sa SELARL nouvellement creee. Documenter la legalite du montage et creer un referentiel reutilisable pour les futurs clients.",
+        "pourQui": "Jonathan (client) + Groupe ODIA (referentiel reutilisable)",
+        "contraintes": [
+          "Aucun intervenant externe (tout en interne ODIA)",
+          "Pas de deadline fixe mais prioritaire",
+          "Justifier la valorisation retenue dans les contrats",
+          "Documenter les methodes standards pour le referentiel"
+        ],
+        "criteresSucces": [
+          "Contrat de cession du fond de patientele redige et justifie",
+          "Contrat de cession des parts SCM redige (avec procedure agrement)",
+          "Legalite du montage documentee et protocolisee",
+          "Procedures de cession listees et verifiees",
+          "Obligations post-cession documentees"
+        ]
+      },
+      "plan": {
+        "phases": [
+          {
+            "numero": 1,
+            "nom": "Recherche Legalite & Referentiel",
+            "statut": "en_cours",
+            "etapes": ["1.1", "1.2", "1.3", "1.4"]
+          },
+          {
+            "numero": 2,
+            "nom": "Valorisation Jonathan",
+            "statut": "a_faire",
+            "etapes": ["2.1", "2.2", "2.3"]
+          },
+          {
+            "numero": 3,
+            "nom": "Redaction Contrats",
+            "statut": "a_faire",
+            "etapes": ["3.0", "3.1", "3.2", "3.3"]
+          },
+          {
+            "numero": 4,
+            "nom": "Procedures & Obligations",
+            "statut": "a_faire",
+            "etapes": ["4.1", "4.2", "4.3", "4.4"]
+          },
+          {
+            "numero": 5,
+            "nom": "Finalisation & Checklist",
+            "statut": "a_faire",
+            "etapes": ["5.1", "5.2"]
+          }
+        ],
+        "totalPhases": 5,
+        "totalEtapes": 17,
+        "etapesTerminees": 0
+      },
+      "problemes": [],
+      "etapes": [
+        {
+          "id": "1.1",
+          "titre": "Rechercher legalite rachat propre fond via SELARL",
+          "statut": "en_cours",
+          "resume": "Rechercher les bases legales et jurisprudences qui confirment qu'un professionnel liberal peut racheter son propre fond via sa SELARL",
+          "duree": "25 min",
+          "partieA": [
+            "Rechercher les textes legaux (Code de commerce, CGI)",
+            "Rechercher les sources (BOFiP, jurisprudences, doctrine)",
+            "Identifier les conditions de validite du montage",
+            "Rediger la fiche docs/legalite-rachat-propre-fond-selarl.md"
+          ],
+          "partieB": [],
+          "partieC": [],
+          "partieD": [
+            "La fiche cite au moins 2 sources legales precises",
+            "Les conditions de validite sont listees clairement",
+            "Les risques/points d'attention sont mentionnes"
+          ],
+          "doneWhen": [
+            "Fichier docs/legalite-rachat-propre-fond-selarl.md cree",
+            "Au moins 2 sources legales citees avec references",
+            "Section Conditions de validite presente",
+            "Section Risques/Points d'attention presente"
+          ]
+        }
+      ],
+      "suivi": {
+        "dateCreation": "2026-01-29",
+        "dateDerniereMAJ": "2026-01-29",
+        "resumeEtapesTerminees": ""
+      }
     },
     {
       "id": "PA-10a",
       "nom": "compta-sci-2024-finalisation",
       "filiale": "odia-ai-digital",
-      "phase": "1/4 - Preparation",
-      "etape": "1.1 - Retrouver le courrier de relance",
+      "phaseEnCours": "1/4 - Preparation",
+      "etapeEnCours": "1.1 - Retrouver le courrier de relance",
       "statut": "bloquee",
       "progression": "0/12",
       "blocage": "Courrier de relance non retrouve + codes acces espace pro manquants",
       "deadline": null,
       "priorite": "TRES URGENT",
       "derniereAction": "2026-01-29 - /pilote-etapes termine",
-      "description": "Finaliser SCI 2024 + lister declarations oubliees"
+      "descriptionCourte": "Finaliser SCI 2024 + lister declarations oubliees",
+      "contexte": {
+        "objectif": "Finaliser la regularisation fiscale de la SCI (IS) pour l'exercice 2024. La comptabilite Odoo est cloturee, la 2065 declaree, mais un courrier de relance des impots signale une declaration manquante.",
+        "pourQui": "Groupe ODIA HOLDING (patrimoine)",
+        "contraintes": [
+          "Retrouver les codes d'acces espace pro impots.gouv",
+          "Retrouver le courrier de relance des impots",
+          "Accompagnement pas a pas avec screenshots"
+        ],
+        "criteresSucces": [
+          "Courrier de relance retrouve et analyse",
+          "Connexion a l'espace pro impots.gouv reussie",
+          "Liste exhaustive des declarations manquantes etablie",
+          "Toutes les declarations manquantes deposees/regularisees",
+          "Documentation creee pour les annees suivantes"
+        ]
+      },
+      "plan": {
+        "phases": [
+          {
+            "numero": 1,
+            "nom": "Preparation",
+            "statut": "en_cours",
+            "etapes": ["1.1", "1.2", "1.3"]
+          },
+          {
+            "numero": 2,
+            "nom": "Diagnostic",
+            "statut": "a_faire",
+            "etapes": ["2.1", "2.2", "2.3"]
+          },
+          {
+            "numero": 3,
+            "nom": "Regularisation",
+            "statut": "a_faire",
+            "etapes": ["3.1", "3.2", "3.3", "3.4"]
+          },
+          {
+            "numero": 4,
+            "nom": "Documentation",
+            "statut": "a_faire",
+            "etapes": ["4.1", "4.2"]
+          }
+        ],
+        "totalPhases": 4,
+        "totalEtapes": 12,
+        "etapesTerminees": 0
+      },
+      "problemes": [
+        {
+          "date": "2026-01-29",
+          "description": "Courrier de relance non retrouve",
+          "impact": "On ne sait pas exactement quelle declaration est reclamee",
+          "resolu": false
+        },
+        {
+          "date": "2026-01-29",
+          "description": "Codes acces espace pro a retrouver",
+          "impact": "Impossible de verifier le statut des declarations",
+          "resolu": false
+        }
+      ],
+      "etapes": [
+        {
+          "id": "1.1",
+          "titre": "Retrouver le courrier de relance des impots",
+          "statut": "en_cours",
+          "resume": "Retrouver le courrier papier ou mail des impots qui signale une declaration manquante",
+          "duree": "15 min",
+          "partieA": [],
+          "partieB": [],
+          "partieC": [
+            "Chercher dans le courrier papier recent (3-6 mois)",
+            "Chercher dans les mails (impots.gouv, DGFIP, SIE)",
+            "Verifier la boite aux lettres physique de la SCI",
+            "Scanner ou photographier le courrier trouve"
+          ],
+          "partieD": [
+            "Le courrier est retrouve (papier ou mail)",
+            "Le document est lisible (scan/photo de qualite)"
+          ],
+          "doneWhen": [
+            "Courrier de relance retrouve et scanne/photographie",
+            "Pret a etre partage en screenshot pour analyse",
+            "OU confirmation que le courrier est introuvable"
+          ]
+        }
+      ],
+      "suivi": {
+        "dateCreation": "2026-01-29",
+        "dateDerniereMAJ": "2026-01-29",
+        "resumeEtapesTerminees": ""
+      }
     },
     {
       "id": "PA-0",
       "nom": "architecture-agent-compta",
       "filiale": "odia-ai-digital",
-      "phase": "1/5 - Architecture des Agents",
-      "etape": "1.1 - Refactoriser CLAUDE.md de COMPTA",
+      "phaseEnCours": "1/5 - Architecture des Agents",
+      "etapeEnCours": "1.1 - Refactoriser CLAUDE.md de COMPTA",
       "statut": "en_cours",
       "progression": "0/17",
       "blocage": null,
       "deadline": null,
       "priorite": "BLOQUANT",
       "derniereAction": "2026-01-29 - /pilote-etapes termine",
-      "description": "Creer agent expert Odoo v19 + expert compta IS France + PGC"
+      "descriptionCourte": "Creer agent expert Odoo v19 + expert compta IS France + PGC",
+      "contexte": {
+        "objectif": "Creer l'infrastructure complete pour realiser la comptabilite en autonomie totale (sans expert-comptable), avec Claude Code comme guide expert.",
+        "pourQui": "ODIA AI & DIGITAL et ses futurs clients (kines, sages-femmes, infirmiers liberaux)",
+        "contraintes": [
+          "Pas de deadline precise - Fondation long terme",
+          "Volume documentation - PGC = 180 pages minimum",
+          "Exhaustivite requise - Identifier TOUTE la doc necessaire"
+        ],
+        "criteresSucces": [
+          "Architecture agents creee (COMPTA refactorise + ODOO-19-COMPTA + PGC-EXPERT)",
+          "Sous-agents consultants crees",
+          "Doc Odoo 19 Online recuperee et organisee",
+          "Doc PGC recuperee et organisee",
+          "Workflow de realisation compta documente"
+        ]
+      },
+      "plan": {
+        "phases": [
+          {
+            "numero": 1,
+            "nom": "Architecture des Agents",
+            "statut": "en_cours",
+            "etapes": ["1.1", "1.2", "1.3", "1.4", "1.5"]
+          },
+          {
+            "numero": 2,
+            "nom": "Documentation Odoo 19",
+            "statut": "a_faire",
+            "etapes": ["2.1", "2.2", "2.3"]
+          },
+          {
+            "numero": 3,
+            "nom": "Documentation PGC",
+            "statut": "a_faire",
+            "etapes": ["3.1", "3.2", "3.3"]
+          },
+          {
+            "numero": 4,
+            "nom": "Recherche Docs Complementaires",
+            "statut": "a_faire",
+            "etapes": ["4.1", "4.2"]
+          },
+          {
+            "numero": 5,
+            "nom": "Workflow et Methodes",
+            "statut": "a_faire",
+            "etapes": ["5.1", "5.2", "5.3", "5.4"]
+          }
+        ],
+        "totalPhases": 5,
+        "totalEtapes": 17,
+        "etapesTerminees": 0
+      },
+      "problemes": [],
+      "etapes": [
+        {
+          "id": "1.1",
+          "titre": "Refactoriser CLAUDE.md de COMPTA",
+          "statut": "en_cours",
+          "resume": "Transformer l'agent COMPTA existant en orchestrateur qui delegue l'expertise a ses agents enfants",
+          "duree": "20 min",
+          "partieA": [
+            "Lire le CLAUDE.md actuel de Agent_claude_pour_COMPTA",
+            "Preparer la nouvelle version (role = orchestrateur chef)"
+          ],
+          "partieB": [
+            "Valider le nouveau role et la posture de l'orchestrateur",
+            "Valider la liste des sous-agents consultants a referencer",
+            "Valider la structure clients/ et protocoles/"
+          ],
+          "partieC": [],
+          "partieD": [
+            "Le CLAUDE.md mentionne le role orchestrateur",
+            "Les agents enfants sont references",
+            "La structure clients/ et protocoles/ est decrite"
+          ],
+          "doneWhen": [
+            "CLAUDE.md de COMPTA reecrit avec role orchestrateur",
+            "References aux agents enfants presentes",
+            "Sous-agents consultants mentionnes",
+            "Structure dossiers documentee"
+          ]
+        }
+      ],
+      "suivi": {
+        "dateCreation": "2026-01-29",
+        "dateDerniereMAJ": "2026-01-29",
+        "resumeEtapesTerminees": ""
+      }
     },
     {
-      "id": "PA-13",
-      "nom": "cession-jonathan-fond-scm-selarl",
-      "filiale": "odia-strategie",
-      "phase": "1/5 - Recherche Legalite & Referentiel",
-      "etape": "1.1 - Rechercher legalite rachat propre fond via SELARL",
+      "id": "PA-15",
+      "nom": "fleurimont-urgences-avant-9-fevrier",
+      "filiale": "perso",
+      "phaseEnCours": "1/4 - Preparation",
+      "etapeEnCours": "1.1 - Audit achats materiel",
       "statut": "en_cours",
-      "progression": "0/17",
+      "progression": "0/11",
       "blocage": null,
-      "deadline": null,
-      "priorite": "URGENT-PRIORITAIRE",
+      "deadline": "2026-02-09",
+      "priorite": "DEADLINE",
       "derniereAction": "2026-01-29 - /pilote-etapes termine",
-      "description": "Valorisation, legalite, contrats, cloture EI, procedures"
+      "descriptionCourte": "2 fuites, ventilation fosse, SPANC, gazon, mail Tropic Elec",
+      "contexte": {
+        "objectif": "Preparer la maison de Fleurimont pour le controle SPANC prevu le 9 fevrier 2026. Toutes les reparations, installations et preparatifs doivent etre termines avant cette date.",
+        "pourQui": "Proprietaire de la maison de Fleurimont",
+        "contraintes": [
+          "Deadline : 9 fevrier 2026 (controle SPANC)",
+          "Fenetre d'intervention : Weekend du 1-2 fevrier OU jeudi 5 fevrier",
+          "Logistique : Audit + achats AVANT d'aller sur place",
+          "Outils lourds necessaires pour les trappes"
+        ],
+        "criteresSucces": [
+          "2 fuites de lavabos reparees (siphons remplaces)",
+          "Systeme ventilation fosse analyse et 2 bouchons installes",
+          "Trappes de fosse ouvertes et accessibles",
+          "Gazon tondu (acces fosse degage)",
+          "Mail Tropic Elec envoye",
+          "Passage Tropic Elec organise"
+        ]
+      },
+      "plan": {
+        "phases": [
+          {
+            "numero": 1,
+            "nom": "Preparation",
+            "statut": "en_cours",
+            "etapes": ["1.1", "1.2", "1.3"]
+          },
+          {
+            "numero": 2,
+            "nom": "Achats",
+            "statut": "a_faire",
+            "etapes": ["2.1"]
+          },
+          {
+            "numero": 3,
+            "nom": "Travaux sur place",
+            "statut": "a_faire",
+            "etapes": ["3.1", "3.2", "3.3", "3.4", "3.5"]
+          },
+          {
+            "numero": 4,
+            "nom": "Finalisation",
+            "statut": "a_faire",
+            "etapes": ["4.1", "4.2"]
+          }
+        ],
+        "totalPhases": 4,
+        "totalEtapes": 11,
+        "etapesTerminees": 0
+      },
+      "problemes": [],
+      "etapes": [
+        {
+          "id": "1.1",
+          "titre": "Audit achats materiel",
+          "statut": "en_cours",
+          "resume": "Etablir la liste complete du materiel a acheter pour les travaux",
+          "duree": "20 min",
+          "partieA": [
+            "Preparer un template de liste d'achats structure par categorie",
+            "Lister les elements connus (siphons x2, bouchons ventilation x2)"
+          ],
+          "partieB": [
+            "Completer la liste avec les references/dimensions si connues",
+            "Identifier les elements a verifier sur place",
+            "Ajouter les consommables (joints, teflon, etc.)"
+          ],
+          "partieC": [
+            "Verifier chez toi si tu as deja certains elements",
+            "Noter les dimensions si tu les connais"
+          ],
+          "partieD": [
+            "La liste contient tous les elements necessaires par categorie",
+            "Les elements incertains sont marques a verifier sur place"
+          ],
+          "doneWhen": [
+            "Fichier liste-achats.md cree dans RESSOURCES/",
+            "Liste organisee par categorie",
+            "Chaque element a une quantite",
+            "SUIVI.md mis a jour"
+          ]
+        }
+      ],
+      "suivi": {
+        "dateCreation": "2026-01-29",
+        "dateDerniereMAJ": "2026-01-29",
+        "resumeEtapesTerminees": ""
+      }
     }
   ],
   "backlog": {
     "prioriteAbsolue": [
-      {"id": "PA-1", "nom": "compta-bilal-2024-2025", "filiale": "compta", "priorite": "URGENT", "description": "EI IR 2024 + EI IS 2025"},
-      {"id": "PA-2", "nom": "compta-thomas-2025", "filiale": "compta", "priorite": "URGENT", "description": "EI IS 2025"},
-      {"id": "PA-3", "nom": "compta-hugo-2025", "filiale": "compta", "priorite": "URGENT", "description": "BNC micro jan-mai + EI IS mai-dec"},
-      {"id": "PA-4", "nom": "compta-lea-2025", "filiale": "compta", "priorite": "URGENT", "description": "Holding + SELARL + BNC micro"},
-      {"id": "PA-5", "nom": "compta-corentin-2025", "filiale": "compta", "priorite": "URGENT", "description": "1 mois BNC decembre"},
-      {"id": "PA-6", "nom": "compta-julie-2025", "filiale": "compta", "priorite": "URGENT", "description": "EI IS sept-dec"},
-      {"id": "PA-7", "nom": "compta-odia-holding-2025", "filiale": "compta", "priorite": "URGENT", "description": "Compta + TVA en retard"},
-      {"id": "PA-8", "nom": "compta-odia-filiales-2025", "filiale": "compta", "priorite": "URGENT", "description": "Strategie, Administratif, AI Digital"},
-      {"id": "PA-9", "nom": "compta-cielito-2025", "filiale": "compta", "priorite": "URGENT", "description": "Import annees precedentes + 2025"},
-      {"id": "PA-10b", "nom": "compta-sci-2025", "filiale": "compta", "priorite": "URGENT", "description": "Compta SCI 2025"},
-      {"id": "PA-11", "nom": "compta-lindo-2025", "filiale": "compta", "priorite": "URGENT", "description": "Import + facture AI Digital"},
-      {"id": "PA-12", "nom": "recuperation-compta-sci-workflow", "filiale": "compta", "priorite": "URGENT", "description": "Recuperer doc SCI 2024, workflow"},
-      {"id": "PA-14", "nom": "recherche-frais-vehicule-complet", "filiale": "odia-strategie", "priorite": "URGENT", "description": "LOA, frais reels/km, tous statuts"}
+      {
+        "id": "PA-1",
+        "nom": "compta-bilal-2024-2025",
+        "filiale": "compta",
+        "priorite": "URGENT",
+        "description": "EI IR 2024 (2035, 2042C-PRO rectif) + EI IS 2025"
+      },
+      {
+        "id": "PA-2",
+        "nom": "compta-thomas-2025",
+        "filiale": "compta",
+        "priorite": "URGENT",
+        "description": "EI IS 2025"
+      },
+      {
+        "id": "PA-3",
+        "nom": "compta-hugo-2025",
+        "filiale": "compta",
+        "priorite": "URGENT",
+        "description": "BNC micro jan-mai + EI IS mai-dec"
+      },
+      {
+        "id": "PA-4",
+        "nom": "compta-lea-2025",
+        "filiale": "compta",
+        "priorite": "URGENT",
+        "description": "Holding + SELARL + BNC micro (revenus remplacement)"
+      },
+      {
+        "id": "PA-5",
+        "nom": "compta-corentin-2025",
+        "filiale": "compta",
+        "priorite": "URGENT",
+        "description": "1 mois BNC decembre (a verifier)"
+      },
+      {
+        "id": "PA-6",
+        "nom": "compta-julie-2025",
+        "filiale": "compta",
+        "priorite": "URGENT",
+        "description": "EI IS sept-dec"
+      },
+      {
+        "id": "PA-7",
+        "nom": "compta-odia-holding-2025",
+        "filiale": "compta",
+        "priorite": "URGENT",
+        "description": "Compta + TVA en retard"
+      },
+      {
+        "id": "PA-8",
+        "nom": "compta-odia-filiales-2025",
+        "filiale": "compta",
+        "priorite": "URGENT",
+        "description": "Strategie, Administratif, AI Digital + facturation intra-groupe"
+      },
+      {
+        "id": "PA-9",
+        "nom": "compta-cielito-2025",
+        "filiale": "compta",
+        "priorite": "URGENT",
+        "description": "Import annees precedentes + 2025 + dividendes + CCA Lindo"
+      },
+      {
+        "id": "PA-10b",
+        "nom": "compta-sci-2025",
+        "filiale": "compta",
+        "priorite": "URGENT",
+        "description": "Compta SCI 2025 (apres PA-0 et PA-10a)"
+      },
+      {
+        "id": "PA-11",
+        "nom": "compta-lindo-2025",
+        "filiale": "compta",
+        "priorite": "URGENT",
+        "description": "Import annees precedentes + 2025 + facture AI Digital + frais garde"
+      },
+      {
+        "id": "PA-12",
+        "nom": "recuperation-compta-sci-workflow",
+        "filiale": "compta",
+        "priorite": "URGENT",
+        "description": "Recuperer doc SCI 2024, definir workflow et journalisation"
+      },
+      {
+        "id": "PA-14",
+        "nom": "recherche-frais-vehicule-complet",
+        "filiale": "odia-strategie",
+        "priorite": "URGENT",
+        "description": "LOA, frais reels/km, SELARL, EI IR, EI IS - tableau complet"
+      }
     ],
     "parFiliale": {
       "odia-administratif": 9,
       "odia-strategie": 8,
-      "compta": 8,
+      "compta": 19,
       "quotation-patient": 5,
       "odia-ai-digital": 9,
       "perso": 9,
@@ -163,17 +597,17 @@
   "alertes": [
     {
       "niveau": "URGENT",
-      "message": "Deadline 9 fevrier",
+      "message": "Deadline 9 fevrier (10 jours)",
       "filiale": "perso",
       "mission": "fleurimont-urgences-avant-9-fevrier",
-      "action": "Demarrer preparation maintenant - 10 jours restants"
+      "action": "Demarrer la preparation maintenant"
     },
     {
       "niveau": "BLOQUE",
       "message": "Documents manquants",
       "filiale": "odia-ai-digital",
       "mission": "compta-sci-2024-finalisation",
-      "action": "Retrouver courrier relance + codes acces espace pro"
+      "action": "Retrouver courrier de relance + codes acces impots"
     }
   ]
 }
