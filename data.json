@@ -1,0 +1,179 @@
+{
+  "meta": {
+    "lastUpdate": "2026-01-30",
+    "version": "1.0.0",
+    "generatedBy": "consolidateur-pilote"
+  },
+  "synthese": {
+    "totalMissions": 78,
+    "missionsActives": 4,
+    "missionsBloquees": 1,
+    "missionsBacklog": 74
+  },
+  "filiales": [
+    {
+      "id": "odia-administratif",
+      "nom": "ODIA-ADMINISTRATIF",
+      "couleur": "#3B82F6",
+      "missions": 0,
+      "enCours": 0,
+      "bloquees": 0,
+      "parent": null
+    },
+    {
+      "id": "odia-strategie",
+      "nom": "ODIA-STRATEGIE",
+      "couleur": "#8B5CF6",
+      "missions": 1,
+      "enCours": 1,
+      "bloquees": 0,
+      "parent": null
+    },
+    {
+      "id": "odia-ai-digital",
+      "nom": "ODIA-AI_DIGITAL",
+      "couleur": "#10B981",
+      "missions": 2,
+      "enCours": 2,
+      "bloquees": 1,
+      "parent": null
+    },
+    {
+      "id": "compta",
+      "nom": "COMPTA",
+      "couleur": "#14B8A6",
+      "missions": 0,
+      "enCours": 0,
+      "bloquees": 0,
+      "parent": "odia-ai-digital"
+    },
+    {
+      "id": "quotation-patient",
+      "nom": "QUOTATION-PATIENT",
+      "couleur": "#06B6D4",
+      "missions": 0,
+      "enCours": 0,
+      "bloquees": 0,
+      "parent": "odia-ai-digital"
+    },
+    {
+      "id": "perso",
+      "nom": "PERSO",
+      "couleur": "#F59E0B",
+      "missions": 1,
+      "enCours": 1,
+      "bloquees": 0,
+      "parent": null
+    },
+    {
+      "id": "croissance-groupe",
+      "nom": "CROISSANCE-GROUPE",
+      "couleur": "#EF4444",
+      "missions": 0,
+      "enCours": 0,
+      "bloquees": 0,
+      "parent": null
+    }
+  ],
+  "missionsActives": [
+    {
+      "id": "PA-15",
+      "nom": "fleurimont-urgences-avant-9-fevrier",
+      "filiale": "perso",
+      "phase": "1/4 - Preparation",
+      "etape": "1.1 - Audit achats materiel",
+      "statut": "en_cours",
+      "progression": "0/11",
+      "blocage": null,
+      "deadline": "2026-02-09",
+      "priorite": "DEADLINE",
+      "derniereAction": "2026-01-29 - /pilote-etapes termine",
+      "description": "2 fuites, ventilation fosse, SPANC, gazon, mail Tropic Elec"
+    },
+    {
+      "id": "PA-10a",
+      "nom": "compta-sci-2024-finalisation",
+      "filiale": "odia-ai-digital",
+      "phase": "1/4 - Preparation",
+      "etape": "1.1 - Retrouver le courrier de relance",
+      "statut": "bloquee",
+      "progression": "0/12",
+      "blocage": "Courrier de relance non retrouve + codes acces espace pro manquants",
+      "deadline": null,
+      "priorite": "TRES URGENT",
+      "derniereAction": "2026-01-29 - /pilote-etapes termine",
+      "description": "Finaliser SCI 2024 + lister declarations oubliees"
+    },
+    {
+      "id": "PA-0",
+      "nom": "architecture-agent-compta",
+      "filiale": "odia-ai-digital",
+      "phase": "1/5 - Architecture des Agents",
+      "etape": "1.1 - Refactoriser CLAUDE.md de COMPTA",
+      "statut": "en_cours",
+      "progression": "0/17",
+      "blocage": null,
+      "deadline": null,
+      "priorite": "BLOQUANT",
+      "derniereAction": "2026-01-29 - /pilote-etapes termine",
+      "description": "Creer agent expert Odoo v19 + expert compta IS France + PGC"
+    },
+    {
+      "id": "PA-13",
+      "nom": "cession-jonathan-fond-scm-selarl",
+      "filiale": "odia-strategie",
+      "phase": "1/5 - Recherche Legalite & Referentiel",
+      "etape": "1.1 - Rechercher legalite rachat propre fond via SELARL",
+      "statut": "en_cours",
+      "progression": "0/17",
+      "blocage": null,
+      "deadline": null,
+      "priorite": "URGENT-PRIORITAIRE",
+      "derniereAction": "2026-01-29 - /pilote-etapes termine",
+      "description": "Valorisation, legalite, contrats, cloture EI, procedures"
+    }
+  ],
+  "backlog": {
+    "prioriteAbsolue": [
+      {"id": "PA-1", "nom": "compta-bilal-2024-2025", "filiale": "compta", "priorite": "URGENT", "description": "EI IR 2024 + EI IS 2025"},
+      {"id": "PA-2", "nom": "compta-thomas-2025", "filiale": "compta", "priorite": "URGENT", "description": "EI IS 2025"},
+      {"id": "PA-3", "nom": "compta-hugo-2025", "filiale": "compta", "priorite": "URGENT", "description": "BNC micro jan-mai + EI IS mai-dec"},
+      {"id": "PA-4", "nom": "compta-lea-2025", "filiale": "compta", "priorite": "URGENT", "description": "Holding + SELARL + BNC micro"},
+      {"id": "PA-5", "nom": "compta-corentin-2025", "filiale": "compta", "priorite": "URGENT", "description": "1 mois BNC decembre"},
+      {"id": "PA-6", "nom": "compta-julie-2025", "filiale": "compta", "priorite": "URGENT", "description": "EI IS sept-dec"},
+      {"id": "PA-7", "nom": "compta-odia-holding-2025", "filiale": "compta", "priorite": "URGENT", "description": "Compta + TVA en retard"},
+      {"id": "PA-8", "nom": "compta-odia-filiales-2025", "filiale": "compta", "priorite": "URGENT", "description": "Strategie, Administratif, AI Digital"},
+      {"id": "PA-9", "nom": "compta-cielito-2025", "filiale": "compta", "priorite": "URGENT", "description": "Import annees precedentes + 2025"},
+      {"id": "PA-10b", "nom": "compta-sci-2025", "filiale": "compta", "priorite": "URGENT", "description": "Compta SCI 2025"},
+      {"id": "PA-11", "nom": "compta-lindo-2025", "filiale": "compta", "priorite": "URGENT", "description": "Import + facture AI Digital"},
+      {"id": "PA-12", "nom": "recuperation-compta-sci-workflow", "filiale": "compta", "priorite": "URGENT", "description": "Recuperer doc SCI 2024, workflow"},
+      {"id": "PA-14", "nom": "recherche-frais-vehicule-complet", "filiale": "odia-strategie", "priorite": "URGENT", "description": "LOA, frais reels/km, tous statuts"}
+    ],
+    "parFiliale": {
+      "odia-administratif": 9,
+      "odia-strategie": 8,
+      "compta": 8,
+      "quotation-patient": 5,
+      "odia-ai-digital": 9,
+      "perso": 9,
+      "croissance-groupe": 11
+    },
+    "total": 74
+  },
+  "alertes": [
+    {
+      "niveau": "URGENT",
+      "message": "Deadline 9 fevrier",
+      "filiale": "perso",
+      "mission": "fleurimont-urgences-avant-9-fevrier",
+      "action": "Demarrer preparation maintenant - 10 jours restants"
+    },
+    {
+      "niveau": "BLOQUE",
+      "message": "Documents manquants",
+      "filiale": "odia-ai-digital",
+      "mission": "compta-sci-2024-finalisation",
+      "action": "Retrouver courrier relance + codes acces espace pro"
+    }
+  ]
+}

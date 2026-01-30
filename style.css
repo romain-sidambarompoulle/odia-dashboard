@@ -1,0 +1,106 @@
+/**
+ * Dashboard CEO ODIA HOLDING
+ * Styles complementaires a Tailwind
+ */
+
+/* Variables couleurs filiales */
+:root {
+    --color-odia-admin: #3B82F6;
+    --color-odia-strategie: #8B5CF6;
+    --color-odia-ai: #10B981;
+    --color-compta: #14B8A6;
+    --color-quotation: #06B6D4;
+    --color-perso: #F59E0B;
+    --color-croissance: #EF4444;
+}
+
+/* Animations */
+@keyframes pulse-slow {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.7; }
+}
+
+.alert-card {
+    animation: pulse-slow 3s ease-in-out infinite;
+}
+
+/* Cards */
+.filiale-card {
+    transition: all 0.2s ease;
+}
+
+.filiale-card:hover {
+    transform: translateY(-2px);
+}
+
+.mission-card {
+    transition: all 0.2s ease;
+}
+
+.mission-card:hover {
+    background-color: rgba(55, 65, 81, 1);
+}
+
+/* Scrollbar personnalisee */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1F2937;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #4B5563;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #6B7280;
+}
+
+/* Table responsive */
+@media (max-width: 768px) {
+    table {
+        font-size: 0.75rem;
+    }
+
+    table th,
+    table td {
+        padding: 0.5rem;
+    }
+}
+
+/* Badge priorite */
+.badge {
+    font-weight: 500;
+    letter-spacing: 0.025em;
+}
+
+/* Progression bar */
+.progress-bar {
+    transition: width 0.5s ease;
+}
+
+/* Focus states */
+button:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.5);
+}
+
+/* Print styles */
+@media print {
+    body {
+        background: white;
+        color: black;
+    }
+
+    .alert-card {
+        animation: none;
+    }
+
+    header, footer {
+        background: #f3f4f6;
+    }
+}
