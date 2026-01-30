@@ -9,12 +9,18 @@ function dashboard() {
         filtreFiliale: null,
         loading: true,
         error: null,
+        selectedMission: null,
+        activeTab: 'resume',
 
         async init() {
             try {
                 const response = await fetch('data.json');
                 if (!response.ok) throw new Error('Erreur chargement data.json');
                 this.data = await response.json();
+                // Initialiser expanded = false pour toutes les etapes
+                (this.data.missionsActives || []).forEach(m => {
+                    (m.etapes || []).forEach(e => e.expanded = false);
+                });
                 this.loading = false;
             } catch (err) {
                 this.error = err.message;
@@ -53,6 +59,24 @@ function dashboard() {
         formatDate(dateStr) {
             if (!dateStr) return '-';
             return dateStr;
+        },
+
+        // Ouvrir le panneau de detail d'une mission
+        openMission(mission) {
+            this.selectedMission = mission;
+            this.activeTab = 'resume';
+            // Initialiser expanded pour les etapes si pas fait
+            (mission.etapes || []).forEach(e => {
+                if (e.expanded === undefined) e.expanded = false;
+            });
+            // Empecher le scroll du body
+            document.body.style.overflow = 'hidden';
+        },
+
+        // Fermer le panneau
+        closeMission() {
+            this.selectedMission = null;
+            document.body.style.overflow = '';
         }
     };
 }
