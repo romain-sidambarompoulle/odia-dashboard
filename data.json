@@ -2,7 +2,7 @@
   "meta": {
     "lastUpdate": "2026-01-30",
     "version": "1.0.0",
-    "generatedBy": "consolidateur-pilote"
+    "generatedBy": "consolidateur-pilote-etapes"
   },
   "synthese": {
     "totalMissions": 78,
@@ -147,9 +147,9 @@
       "etapes": [
         {
           "id": "1.1",
-          "titre": "Rechercher legalite rachat propre fond via SELARL",
+          "titre": "Rechercher et documenter la legalite du rachat de son propre fond via SELARL",
           "statut": "en_cours",
-          "resume": "Rechercher les bases legales et jurisprudences qui confirment qu'un professionnel liberal peut racheter son propre fond via sa SELARL",
+          "resume": "Rechercher les bases legales et jurisprudences qui confirment qu'un professionnel liberal peut racheter son propre fond de patientele via sa SELARL. Creer une fiche referentiel reutilisable pour ODIA.",
           "duree": "25 min",
           "partieA": [
             "Rechercher les textes legaux (Code de commerce, CGI)",
@@ -168,8 +168,500 @@
             "Fichier docs/legalite-rachat-propre-fond-selarl.md cree",
             "Au moins 2 sources legales citees avec references",
             "Section Conditions de validite presente",
-            "Section Risques/Points d'attention presente"
-          ]
+            "Section Risques/Points d'attention presente",
+            "SUIVI.md + JOURNAL.md mis a jour"
+          ],
+          "expanded": false
+        },
+        {
+          "id": "1.2",
+          "titre": "Creer fiche methodes : valorisation fond de patientele kine",
+          "statut": "a_faire",
+          "resume": "Documenter les methodes standards de valorisation d'un fond de patientele de kinesitherapeute (% CA, EBE, comparables). Fiche referentiel ODIA reutilisable.",
+          "duree": "20 min",
+          "partieA": [
+            "Rechercher les methodes de valorisation admises (% CA, multiple EBE, etc.)",
+            "Identifier les specificites kine (pas de local, patientele attachee a la personne)",
+            "Lister les fourchettes de prix pratiquees sur le marche",
+            "Rediger la fiche docs/methode-valorisation-fond-patientele-kine.md"
+          ],
+          "partieB": [],
+          "partieC": [],
+          "partieD": [
+            "Au moins 2 methodes de valorisation decrites",
+            "Fourchettes de prix avec sources",
+            "Exemple de calcul inclus"
+          ],
+          "doneWhen": [
+            "Fichier docs/methode-valorisation-fond-patientele-kine.md cree",
+            "Methode % CA documentee avec fourchettes",
+            "Methode EBE/benefice documentee",
+            "Specificites kine mentionnees",
+            "SUIVI.md + JOURNAL.md mis a jour"
+          ],
+          "expanded": false
+        },
+        {
+          "id": "1.3",
+          "titre": "Creer fiche methodes : valorisation parts SCM",
+          "statut": "a_faire",
+          "resume": "Documenter les methodes de valorisation des parts de SCM (actif net, valeur d'usage, quote-part du patrimoine). Fiche referentiel ODIA.",
+          "duree": "20 min",
+          "partieA": [
+            "Rechercher les methodes de valorisation des parts de SCM",
+            "Expliquer la notion d'actif net comptable",
+            "Expliquer la valeur d'usage (apports, travaux, materiel)",
+            "Rediger la fiche docs/methode-valorisation-parts-scm.md"
+          ],
+          "partieB": [],
+          "partieC": [],
+          "partieD": [
+            "Methode actif net expliquee",
+            "Elements a prendre en compte listes",
+            "Exemple de calcul inclus"
+          ],
+          "doneWhen": [
+            "Fichier docs/methode-valorisation-parts-scm.md cree",
+            "Methode actif net comptable documentee",
+            "Liste des elements a valoriser (apports, comptes courants, etc.)",
+            "SUIVI.md + JOURNAL.md mis a jour"
+          ],
+          "expanded": false
+        },
+        {
+          "id": "1.4",
+          "titre": "Valider les fiches referentiel avec utilisateur",
+          "statut": "a_faire",
+          "resume": "Passer en revue ensemble les 3 fiches referentiel creees (legalite, valorisation fond, valorisation SCM). Ajuster si necessaire avant de les utiliser pour le cas Jonathan.",
+          "duree": "15 min",
+          "partieA": [
+            "Preparer un resume des 3 fiches pour revue rapide"
+          ],
+          "partieB": [
+            "Relire la fiche legalite - valider ou ajuster",
+            "Relire la fiche valorisation fond - valider ou ajuster",
+            "Relire la fiche valorisation SCM - valider ou ajuster",
+            "Confirmer que le referentiel est pret pour l'application"
+          ],
+          "partieC": [],
+          "partieD": [
+            "Les 3 fiches ont ete relues",
+            "Les modifications demandees ont ete appliquees",
+            "Validation explicite de l'utilisateur"
+          ],
+          "doneWhen": [
+            "3 fiches relues et validees",
+            "Modifications eventuelles appliquees",
+            "Phase 1 terminee",
+            "SUIVI.md + JOURNAL.md mis a jour"
+          ],
+          "expanded": false
+        },
+        {
+          "id": "2.1",
+          "titre": "Collecter les donnees chiffrees de Jonathan",
+          "statut": "a_faire",
+          "resume": "Recuperer les donnees comptables de Jonathan (CA, charges, benefice sur 3 ans) necessaires pour appliquer les methodes de valorisation.",
+          "duree": "20 min",
+          "partieA": [
+            "Preparer la liste des donnees necessaires",
+            "Creer le template de collecte"
+          ],
+          "partieB": [
+            "Remplir les donnees CA des 3 dernieres annees",
+            "Remplir les charges professionnelles",
+            "Calculer le benefice moyen",
+            "Remplir les donnees SCM (capital, comptes courants, actif)"
+          ],
+          "partieC": [
+            "Fournir les documents comptables si besoin de verification"
+          ],
+          "partieD": [
+            "CA 3 ans renseigne",
+            "Charges renseignees",
+            "Donnees SCM renseignees"
+          ],
+          "doneWhen": [
+            "Fichier RESSOURCES/donnees-jonathan.md cree",
+            "CA 3 ans documente",
+            "Charges et benefice moyen calcule",
+            "Donnees SCM documentees",
+            "SUIVI.md + JOURNAL.md mis a jour"
+          ],
+          "expanded": false
+        },
+        {
+          "id": "2.2",
+          "titre": "Appliquer les methodes de valorisation et calculer les valeurs standards",
+          "statut": "a_faire",
+          "resume": "Appliquer les methodes du referentiel aux donnees de Jonathan. Calculer ce que devrait valoir le fond et les parts SCM selon les standards du marche.",
+          "duree": "20 min",
+          "partieA": [
+            "Appliquer methode % CA au fond de patientele",
+            "Appliquer methode multiple EBE au fond",
+            "Calculer la valorisation SCM (actif net, quote-part)",
+            "Comparer avec la valorisation retenue (50k + 10k)",
+            "Rediger RESSOURCES/calcul-valorisation-jonathan.md"
+          ],
+          "partieB": [],
+          "partieC": [],
+          "partieD": [
+            "Au moins 2 methodes appliquees pour le fond",
+            "Valorisation SCM calculee",
+            "Comparaison avec 50k + 10k documentee"
+          ],
+          "doneWhen": [
+            "Fichier RESSOURCES/calcul-valorisation-jonathan.md cree",
+            "Calcul methode % CA present",
+            "Calcul methode EBE present",
+            "Calcul valorisation SCM present",
+            "Ecart avec valorisation retenue commente",
+            "SUIVI.md + JOURNAL.md mis a jour"
+          ],
+          "expanded": false
+        },
+        {
+          "id": "2.3",
+          "titre": "Rediger la justification de la valorisation retenue (50k + 10k)",
+          "statut": "a_faire",
+          "resume": "Rediger un argumentaire justifiant pourquoi la valorisation retenue (50k fond + 10k SCM) est coherente et defendable, pour insertion dans les contrats.",
+          "duree": "20 min",
+          "partieA": [
+            "Rediger la justification du prix du fond (50k)",
+            "Rediger la justification du prix des parts SCM (10k)",
+            "Structurer l'argumentaire de maniere defendable",
+            "Creer RESSOURCES/justification-valorisation-50k-10k.md"
+          ],
+          "partieB": [],
+          "partieC": [],
+          "partieD": [
+            "Justification fond presente avec arguments chiffres",
+            "Justification SCM presente avec arguments",
+            "Formulation prete pour insertion contrat"
+          ],
+          "doneWhen": [
+            "Fichier RESSOURCES/justification-valorisation-50k-10k.md cree",
+            "Justification 50k (fond) argumentee",
+            "Justification 10k (SCM) argumentee",
+            "Texte utilisable dans les contrats",
+            "Phase 2 terminee",
+            "SUIVI.md + JOURNAL.md mis a jour"
+          ],
+          "expanded": false
+        },
+        {
+          "id": "3.0",
+          "titre": "Rechercher les obligations legales d'un contrat de cession (fond + parts SCM)",
+          "statut": "a_faire",
+          "resume": "Avant de rediger les contrats, rechercher les mentions obligatoires et les formalites legales requises pour une cession de fond de patientele et une cession de parts de societe civile.",
+          "duree": "20 min",
+          "partieA": [
+            "Rechercher les mentions obligatoires d'un contrat de cession de fond liberal",
+            "Rechercher les mentions obligatoires d'une cession de parts de societe civile",
+            "Identifier les formalites legales associees (enregistrement, etc.)",
+            "Rechercher les specificites pour les professions de sante (kine)",
+            "Creer la fiche docs/obligations-contrat-cession-fond-scm.md"
+          ],
+          "partieB": [],
+          "partieC": [],
+          "partieD": [
+            "Mentions obligatoires fond de patientele listees",
+            "Mentions obligatoires cession parts SCM listees",
+            "Formalites legales identifiees",
+            "Sources juridiques citees"
+          ],
+          "doneWhen": [
+            "Fichier docs/obligations-contrat-cession-fond-scm.md cree",
+            "Section Mentions obligatoires fond presente",
+            "Section Mentions obligatoires parts SCM presente",
+            "Section Formalites legales presente",
+            "Au moins 2 sources juridiques citees",
+            "SUIVI.md + JOURNAL.md mis a jour"
+          ],
+          "expanded": false
+        },
+        {
+          "id": "3.1",
+          "titre": "Rediger le contrat de cession du fond de patientele",
+          "statut": "a_faire",
+          "resume": "Rediger le contrat complet de cession du fond de patientele de Jonathan (EI) vers sa SELARL. Inclure la justification de la valorisation.",
+          "duree": "25 min",
+          "partieA": [
+            "Rediger les clauses standard d'un contrat de cession de fond",
+            "Integrer l'identification des parties (Jonathan EI / SELARL)",
+            "Integrer la designation du fond et ses elements",
+            "Integrer le prix et sa justification",
+            "Integrer les conditions suspensives et garanties",
+            "Creer RESSOURCES/contrat-cession-fond-patientele-jonathan.md"
+          ],
+          "partieB": [],
+          "partieC": [],
+          "partieD": [
+            "Parties correctement identifiees",
+            "Fond clairement designe",
+            "Prix et justification presents",
+            "Clauses standard presentes"
+          ],
+          "doneWhen": [
+            "Fichier RESSOURCES/contrat-cession-fond-patientele-jonathan.md cree",
+            "Toutes les clauses essentielles presentes",
+            "Justification valorisation integree",
+            "Pret pour revue en etape 3.3",
+            "SUIVI.md + JOURNAL.md mis a jour"
+          ],
+          "expanded": false
+        },
+        {
+          "id": "3.2",
+          "titre": "Rediger le contrat de cession des parts SCM (avec clause agrement)",
+          "statut": "a_faire",
+          "resume": "Rediger le contrat de cession des 50 parts de SCM de Jonathan vers sa SELARL. Inclure la procedure d'agrement des associes.",
+          "duree": "25 min",
+          "partieA": [
+            "Rediger les clauses standard d'une cession de parts de societe civile",
+            "Integrer l'identification des parties",
+            "Integrer la designation des parts (50 parts sur 150)",
+            "Integrer le prix et sa justification",
+            "Integrer la clause d'agrement (reference aux statuts SCM)",
+            "Integrer le calendrier de la procedure d'agrement",
+            "Creer RESSOURCES/contrat-cession-parts-scm-jonathan.md"
+          ],
+          "partieB": [],
+          "partieC": [],
+          "partieD": [
+            "Parties correctement identifiees",
+            "Parts clairement designees (50/150)",
+            "Clause d'agrement presente",
+            "Procedure d'agrement detaillee"
+          ],
+          "doneWhen": [
+            "Fichier RESSOURCES/contrat-cession-parts-scm-jonathan.md cree",
+            "Clause agrement presente et complete",
+            "Justification valorisation integree",
+            "Pret pour revue en etape 3.3",
+            "SUIVI.md + JOURNAL.md mis a jour"
+          ],
+          "expanded": false
+        },
+        {
+          "id": "3.3",
+          "titre": "Relire et valider les deux contrats ensemble",
+          "statut": "a_faire",
+          "resume": "Passer en revue ensemble les deux contrats rediges. Verifier la conformite avec les obligations legales (etape 3.0), ajuster si necessaire, valider avant finalisation.",
+          "duree": "20 min",
+          "partieA": [
+            "Preparer un resume des points cles de chaque contrat",
+            "Verifier la conformite avec docs/obligations-contrat-cession-fond-scm.md"
+          ],
+          "partieB": [
+            "Relire le contrat cession fond - valider ou ajuster",
+            "Relire le contrat cession SCM - valider ou ajuster",
+            "Verifier la coherence entre les deux contrats",
+            "Confirmer que les contrats sont conformes et prets"
+          ],
+          "partieC": [],
+          "partieD": [
+            "Les deux contrats ont ete relus",
+            "Conformite avec obligations legales verifiee",
+            "Les modifications demandees ont ete appliquees",
+            "Validation explicite de l'utilisateur"
+          ],
+          "doneWhen": [
+            "2 contrats relus et valides",
+            "Conformite legale confirmee",
+            "Modifications eventuelles appliquees",
+            "Phase 3 terminee",
+            "SUIVI.md + JOURNAL.md mis a jour"
+          ],
+          "expanded": false
+        },
+        {
+          "id": "4.1",
+          "titre": "Repondre aux questions EI : cloture ? EI declarative obligatoire ?",
+          "statut": "a_faire",
+          "resume": "Rechercher et documenter si Jonathan doit cloturer son EI a l'IR, et s'il doit creer une EI declarative pour recevoir ses revenus de la SELARL.",
+          "duree": "20 min",
+          "partieA": [
+            "Rechercher les regles de cloture d'EI lors du passage en SELARL",
+            "Rechercher si une EI declarative est obligatoire pour un gerant de SELARL",
+            "Documenter les deux reponses avec sources",
+            "Creer RESSOURCES/questions-ei-cloture-declarative.md"
+          ],
+          "partieB": [],
+          "partieC": [],
+          "partieD": [
+            "Question cloture EI repondue avec sources",
+            "Question EI declarative repondue avec sources",
+            "Recommandations claires pour Jonathan"
+          ],
+          "doneWhen": [
+            "Fichier RESSOURCES/questions-ei-cloture-declarative.md cree",
+            "Reponse cloture EI documentee",
+            "Reponse EI declarative documentee",
+            "Sources juridiques citees",
+            "SUIVI.md + JOURNAL.md mis a jour"
+          ],
+          "expanded": false
+        },
+        {
+          "id": "4.2",
+          "titre": "Lister les declarations aux organismes (Ordre, ARS, CPAM, URSSAF)",
+          "statut": "a_faire",
+          "resume": "Lister toutes les declarations a faire aupres des organismes suite a la cession et au changement de structure (Ordre des kines, ARS, CPAM, URSSAF, impots, etc.).",
+          "duree": "20 min",
+          "partieA": [
+            "Lister les declarations Ordre des kinesitherapeutes",
+            "Lister les declarations ARS (changement d'exercice)",
+            "Lister les declarations CPAM (conventionnement SELARL)",
+            "Lister les declarations URSSAF/CIPAV/CARPIMKO",
+            "Lister les declarations fiscales (impots)",
+            "Creer RESSOURCES/declarations-organismes.md"
+          ],
+          "partieB": [],
+          "partieC": [],
+          "partieD": [
+            "Au moins 5 organismes couverts",
+            "Pour chaque : formulaire/procedure + delai",
+            "Checklist prete a l'emploi"
+          ],
+          "doneWhen": [
+            "Fichier RESSOURCES/declarations-organismes.md cree",
+            "Declarations Ordre listees",
+            "Declarations ARS listees",
+            "Declarations CPAM listees",
+            "Declarations URSSAF/caisses listees",
+            "Delais indiques pour chaque",
+            "SUIVI.md + JOURNAL.md mis a jour"
+          ],
+          "expanded": false
+        },
+        {
+          "id": "4.3",
+          "titre": "Documenter les formalites de legalisation (enregistrement, greffe, publicite)",
+          "statut": "a_faire",
+          "resume": "Documenter les formalites legales a accomplir apres la signature des contrats : enregistrement aux impots, depot au greffe, publicite legale.",
+          "duree": "20 min",
+          "partieA": [
+            "Documenter l'enregistrement du contrat de cession aux impots",
+            "Documenter les formalites au greffe du tribunal de commerce",
+            "Documenter les obligations de publicite legale (JAL)",
+            "Documenter les delais et couts associes",
+            "Creer RESSOURCES/formalites-legalisation.md"
+          ],
+          "partieB": [],
+          "partieC": [],
+          "partieD": [
+            "Enregistrement impots documente",
+            "Formalites greffe documentees",
+            "Publicite legale documentee",
+            "Couts estimes indiques"
+          ],
+          "doneWhen": [
+            "Fichier RESSOURCES/formalites-legalisation.md cree",
+            "Procedure enregistrement impots presente",
+            "Procedure greffe presente",
+            "Procedure publicite legale presente",
+            "Couts et delais indiques",
+            "SUIVI.md + JOURNAL.md mis a jour"
+          ],
+          "expanded": false
+        },
+        {
+          "id": "4.4",
+          "titre": "Detailler les consequences sociales/fiscales post-rachat",
+          "statut": "a_faire",
+          "resume": "Documenter toutes les consequences du rachat : impact sur les cotisations sociales, impact fiscal, plus-value de cession, declarations fiscales de l'EI pour le debut d'annee, regime social et fiscal de la SELARL.",
+          "duree": "20 min",
+          "partieA": [
+            "Documenter le regime social du gerant de SELARL (TNS)",
+            "Documenter l'impact sur les cotisations (URSSAF, CARPIMKO)",
+            "Documenter la deductibilite des interets du pret",
+            "Documenter l'amortissement du fond/parts",
+            "Documenter la plus-value de cession (calcul, regime, exonerations, declaration, paiement)",
+            "Documenter les declarations fiscales EI (revenus debut 2026, formulaires, delais)",
+            "Creer RESSOURCES/consequences-sociales-fiscales.md"
+          ],
+          "partieB": [],
+          "partieC": [],
+          "partieD": [
+            "Regime social explique",
+            "Impact cotisations detaille",
+            "Plus-value de cession documentee (calcul, exo, declaration, paiement)",
+            "Declarations EI debut annee documentees",
+            "Aspects fiscaux SELARL couverts"
+          ],
+          "doneWhen": [
+            "Fichier RESSOURCES/consequences-sociales-fiscales.md cree",
+            "Regime social gerant SELARL documente",
+            "Plus-value : calcul, exonerations, declaration, paiement",
+            "Declarations EI 2026 : quoi, quand, comment",
+            "Deductibilite interets/amortissement documente",
+            "Phase 4 terminee",
+            "SUIVI.md + JOURNAL.md mis a jour"
+          ],
+          "expanded": false
+        },
+        {
+          "id": "5.1",
+          "titre": "Creer le calendrier d'enchainement des demarches",
+          "statut": "a_faire",
+          "resume": "Creer un calendrier operationnel avec l'ordre chronologique de toutes les demarches a realiser, du deblocage du pret jusqu'a la cloture complete du dossier.",
+          "duree": "15 min",
+          "partieA": [
+            "Compiler toutes les demarches des phases precedentes",
+            "Les ordonner chronologiquement",
+            "Identifier les dependances (X avant Y)",
+            "Estimer les delais entre chaque etape",
+            "Creer RESSOURCES/calendrier-demarches-jonathan.md"
+          ],
+          "partieB": [],
+          "partieC": [],
+          "partieD": [
+            "Toutes les demarches incluses",
+            "Ordre logique respecte",
+            "Dependances identifiees",
+            "Calendrier utilisable immediatement"
+          ],
+          "doneWhen": [
+            "Fichier RESSOURCES/calendrier-demarches-jonathan.md cree",
+            "Ordre chronologique clair",
+            "Dependances indiquees",
+            "Delais estimes",
+            "SUIVI.md + JOURNAL.md mis a jour"
+          ],
+          "expanded": false
+        },
+        {
+          "id": "5.2",
+          "titre": "Creer la checklist finale et valider le dossier complet",
+          "statut": "a_faire",
+          "resume": "Creer une checklist finale de tous les livrables et demarches. Passer en revue ensemble le dossier complet pour s'assurer que rien ne manque.",
+          "duree": "20 min",
+          "partieA": [
+            "Compiler tous les livrables crees",
+            "Creer la checklist finale",
+            "Verifier que tous les criteres de succes du CONTEXTE.md sont couverts"
+          ],
+          "partieB": [
+            "Passer en revue la checklist",
+            "Verifier que rien ne manque",
+            "Valider le dossier comme complet",
+            "Identifier les prochaines actions operationnelles (hors mission)"
+          ],
+          "partieC": [],
+          "partieD": [
+            "Tous les livrables presents",
+            "Tous les criteres de succes coches",
+            "Validation explicite de l'utilisateur"
+          ],
+          "doneWhen": [
+            "Fichier RESSOURCES/checklist-finale-jonathan.md cree",
+            "Tous les livrables verifies presents",
+            "Criteres de succes CONTEXTE.md valides",
+            "Mission marquee comme terminee",
+            "SUIVI.md + JOURNAL.md mis a jour (statut final)"
+          ],
+          "expanded": false
         }
       ],
       "suivi": {
@@ -257,7 +749,7 @@
           "id": "1.1",
           "titre": "Retrouver le courrier de relance des impots",
           "statut": "en_cours",
-          "resume": "Retrouver le courrier papier ou mail des impots qui signale une declaration manquante",
+          "resume": "Retrouver le courrier papier ou mail des impots qui signale une declaration manquante. C'est la cle pour savoir exactement ce qui est reclame.",
           "duree": "15 min",
           "partieA": [],
           "partieB": [],
@@ -274,8 +766,345 @@
           "doneWhen": [
             "Courrier de relance retrouve et scanne/photographie",
             "Pret a etre partage en screenshot pour analyse",
-            "OU confirmation que le courrier est introuvable"
-          ]
+            "OU confirmation que le courrier est introuvable (on passera en mode verification systematique)"
+          ],
+          "expanded": false
+        },
+        {
+          "id": "1.2",
+          "titre": "Retrouver les codes acces espace pro impots.gouv",
+          "statut": "a_faire",
+          "resume": "Retrouver les identifiants de connexion a l'espace professionnel impots.gouv de la SCI. Sans ces codes, impossible de verifier ou deposer les declarations.",
+          "duree": "15 min",
+          "partieA": [],
+          "partieB": [],
+          "partieC": [
+            "Chercher dans le gestionnaire de mots de passe",
+            "Chercher dans les mails de creation du compte (impots.gouv)",
+            "Chercher dans les documents de creation de la SCI",
+            "Si introuvable : procedure de recuperation sur impots.gouv"
+          ],
+          "partieD": [
+            "Identifiant trouve (SIREN ou numero fiscal)",
+            "Mot de passe trouve ou procedure de reset lancee"
+          ],
+          "doneWhen": [
+            "Identifiants prets pour connexion",
+            "OU procedure de recuperation en cours (delai connu)"
+          ],
+          "expanded": false
+        },
+        {
+          "id": "1.3",
+          "titre": "Analyser le courrier ensemble",
+          "statut": "a_faire",
+          "resume": "Tu me partages le courrier en screenshot, je l'analyse et on identifie precisement ce qui est demande, les delais et les risques.",
+          "duree": "20 min",
+          "partieA": [
+            "Analyser le contenu du courrier",
+            "Identifier la declaration manquante",
+            "Verifier les delais et penalites mentionnes",
+            "Preparer les actions a mener"
+          ],
+          "partieB": [
+            "Tu partages le screenshot du courrier",
+            "Je t'explique ce qui est demande",
+            "On confirme la strategie de regularisation",
+            "On ajuste le plan si necessaire (nouvelles declarations decouvertes)"
+          ],
+          "partieC": [
+            "Prendre le screenshot du courrier",
+            "Le partager dans la conversation"
+          ],
+          "partieD": [
+            "Le courrier a ete analyse completement",
+            "La declaration manquante est identifiee",
+            "Les delais sont connus",
+            "Le plan Phase 3 est confirme ou ajuste"
+          ],
+          "doneWhen": [
+            "Declaration(s) manquante(s) identifiee(s) clairement",
+            "Delais et penalites documentes dans JOURNAL.md",
+            "Plan de regularisation confirme"
+          ],
+          "expanded": false
+        },
+        {
+          "id": "2.1",
+          "titre": "Connexion espace pro impots.gouv",
+          "statut": "a_faire",
+          "resume": "Se connecter a l'espace professionnel impots.gouv de la SCI. Je te guide pas a pas avec tes screenshots.",
+          "duree": "20 min",
+          "partieA": [
+            "Preparer les instructions de navigation",
+            "Identifier les menus a chercher"
+          ],
+          "partieB": [
+            "Tu vas sur impots.gouv.fr > Espace professionnel",
+            "Tu te connectes avec les identifiants de la SCI",
+            "Tu me montres chaque ecran en screenshot",
+            "Je te guide vers les bonnes sections"
+          ],
+          "partieC": [
+            "Te connecter avec tes identifiants",
+            "Prendre les screenshots a chaque etape"
+          ],
+          "partieD": [
+            "Connexion reussie a l'espace pro",
+            "Acces au tableau de bord de la SCI confirme"
+          ],
+          "doneWhen": [
+            "Connecte a l'espace pro impots.gouv",
+            "Acces aux declarations de la SCI visible",
+            "Pret a explorer les declarations deposees"
+          ],
+          "expanded": false
+        },
+        {
+          "id": "2.2",
+          "titre": "Verifier les declarations deja deposees",
+          "statut": "a_faire",
+          "resume": "Explorer l'espace pro pour lister toutes les declarations deja faites. On verifie que la 2065 apparait bien et on cherche ce qui manque.",
+          "duree": "20 min",
+          "partieA": [
+            "Preparer la checklist des declarations attendues",
+            "Analyser chaque screenshot"
+          ],
+          "partieB": [
+            "Navigation dans Mes declarations ou section equivalente",
+            "Tu me montres chaque ecran",
+            "Je note ce qui est present / absent",
+            "On cherche les messages d'alerte eventuels"
+          ],
+          "partieC": [
+            "Naviguer dans les menus",
+            "Prendre les screenshots"
+          ],
+          "partieD": [
+            "Liste des declarations deposees etablie",
+            "2065 visible et confirmee",
+            "Messages d'alerte ou relances identifies"
+          ],
+          "doneWhen": [
+            "Liste complete des declarations visibles notee",
+            "Statut de chaque declaration attendue connu",
+            "Alertes ou demandes de l'administration identifiees"
+          ],
+          "expanded": false
+        },
+        {
+          "id": "2.3",
+          "titre": "Identifier les declarations manquantes",
+          "statut": "a_faire",
+          "resume": "Croiser ce qui est depose avec notre checklist complete. Etablir la liste definitive des declarations a regulariser.",
+          "duree": "20 min",
+          "partieA": [
+            "Comparer les declarations vues avec la checklist",
+            "Identifier les ecarts",
+            "Prioriser les regularisations"
+          ],
+          "partieB": [
+            "Je te presente l'analyse",
+            "On confirme ensemble ce qui manque",
+            "On definit l'ordre de regularisation",
+            "On ajuste la Phase 3 si necessaire"
+          ],
+          "partieC": [
+            "Valider l'analyse",
+            "Confirmer les priorites"
+          ],
+          "partieD": [
+            "Liste definitive des declarations manquantes etablie",
+            "Ordre de regularisation defini",
+            "Phase 3 ajustee si besoin"
+          ],
+          "doneWhen": [
+            "Liste definitive documentee dans JOURNAL.md",
+            "Etapes 3.1, 3.2, etc. confirmees ou ajustees",
+            "Pret a passer a la regularisation"
+          ],
+          "expanded": false
+        },
+        {
+          "id": "3.1",
+          "titre": "Remplir/deposer le releve de solde IS (2572)",
+          "statut": "a_faire",
+          "resume": "Remplir et deposer le formulaire 2572 (releve de solde IS). Obligatoire meme en cas de deficit. On le fait ensemble pas a pas.",
+          "duree": "25 min",
+          "partieA": [
+            "Preparer les informations necessaires (resultat fiscal, IS du = 0)",
+            "Expliquer chaque case du formulaire"
+          ],
+          "partieB": [
+            "Navigation vers le formulaire 2572 sur espace pro",
+            "Remplissage case par case avec tes screenshots",
+            "Je valide chaque saisie avant que tu confirmes",
+            "Soumission du formulaire"
+          ],
+          "partieC": [
+            "Saisir les valeurs dans le formulaire",
+            "Prendre les screenshots",
+            "Valider et soumettre"
+          ],
+          "partieD": [
+            "Formulaire soumis",
+            "Accuse de reception obtenu",
+            "Screenshot de l'accuse sauvegarde"
+          ],
+          "doneWhen": [
+            "2572 depose avec succes",
+            "Accuse de reception dans RESSOURCES/",
+            "Statut note dans JOURNAL.md"
+          ],
+          "expanded": false
+        },
+        {
+          "id": "3.2",
+          "titre": "Verifier/regulariser la CFE",
+          "statut": "a_faire",
+          "resume": "Verifier si la declaration initiale CFE a ete faite. Si non, la regulariser ou comprendre la situation.",
+          "duree": "20 min",
+          "partieA": [
+            "Rechercher ou trouver la CFE sur espace pro",
+            "Preparer les explications sur la CFE pour SCI"
+          ],
+          "partieB": [
+            "Chercher la section CFE sur espace pro",
+            "Verifier si une declaration initiale existe",
+            "Si manquante : comprendre la procedure de regularisation",
+            "Si exoneree : documenter pourquoi"
+          ],
+          "partieC": [
+            "Naviguer vers la section CFE",
+            "Prendre les screenshots",
+            "Effectuer les actions si necessaire"
+          ],
+          "partieD": [
+            "Statut CFE connu (declaree / a declarer / exoneree)",
+            "Action effectuee si necessaire"
+          ],
+          "doneWhen": [
+            "CFE verifiee et regularisee si besoin",
+            "Statut documente dans JOURNAL.md",
+            "Si exoneree ou non applicable : justification notee"
+          ],
+          "expanded": false
+        },
+        {
+          "id": "3.3",
+          "titre": "Verifier les beneficiaires effectifs (RBE) sur INPI",
+          "statut": "a_faire",
+          "resume": "Verifier que les beneficiaires effectifs de la SCI sont declares et a jour sur le Registre National des Entreprises (INPI).",
+          "duree": "20 min",
+          "partieA": [
+            "Expliquer ce qu'est le RBE et pourquoi c'est obligatoire",
+            "Preparer les instructions de navigation INPI"
+          ],
+          "partieB": [
+            "Connexion au Guichet Unique INPI",
+            "Recherche de la SCI",
+            "Verification des beneficiaires declares",
+            "Correction si necessaire"
+          ],
+          "partieC": [
+            "Te connecter a l'INPI",
+            "Naviguer et prendre les screenshots",
+            "Mettre a jour si necessaire"
+          ],
+          "partieD": [
+            "RBE visible et correct",
+            "Ou mise a jour effectuee"
+          ],
+          "doneWhen": [
+            "Beneficiaires effectifs verifies et a jour",
+            "Screenshot de confirmation dans RESSOURCES/",
+            "Statut documente dans JOURNAL.md"
+          ],
+          "expanded": false
+        },
+        {
+          "id": "3.4",
+          "titre": "Confirmer la regularisation complete",
+          "statut": "a_faire",
+          "resume": "Faire le point final sur toutes les regularisations effectuees. S'assurer qu'on est en regle a 100%.",
+          "duree": "15 min",
+          "partieA": [
+            "Recapituler toutes les actions effectuees",
+            "Verifier que la checklist est complete",
+            "Preparer le resume final"
+          ],
+          "partieB": [
+            "Revoir ensemble les accuses de reception",
+            "Confirmer que tout est fait",
+            "Identifier si des suivis sont necessaires (delais de traitement, etc.)"
+          ],
+          "partieC": [
+            "Archiver les accuses de reception",
+            "Valider que tout est en ordre"
+          ],
+          "partieD": [
+            "Toutes les declarations manquantes regularisees",
+            "Tous les accuses de reception sauvegardes",
+            "Aucun point en suspens"
+          ],
+          "doneWhen": [
+            "Checklist 100% complete",
+            "Tous les documents archives dans RESSOURCES/",
+            "JOURNAL.md mis a jour avec le resume final",
+            "Criteres de succes du CONTEXTE.md coches"
+          ],
+          "expanded": false
+        },
+        {
+          "id": "4.1",
+          "titre": "Creer checklist declarations SCI IS",
+          "statut": "a_faire",
+          "resume": "Creer un document de reference listant TOUTES les declarations obligatoires pour une SCI a l'IS. Ce sera la base pour les annees suivantes.",
+          "duree": "20 min",
+          "partieA": [
+            "Compiler toutes les declarations identifiees pendant la mission",
+            "Structurer par type (IS, CFE, INPI, etc.)",
+            "Ajouter les conditions d'applicabilite",
+            "Creer le fichier dans docs/ de l'agent COMPTA"
+          ],
+          "partieB": [],
+          "partieC": [],
+          "partieD": [
+            "Fichier cree dans Agent_claude_pour_COMPTA/docs/",
+            "Contenu complet et structure"
+          ],
+          "doneWhen": [
+            "docs/checklist-declarations-sci-is.md cree",
+            "Toutes les declarations listees avec conditions",
+            "Document utilisable pour les annees suivantes"
+          ],
+          "expanded": false
+        },
+        {
+          "id": "4.2",
+          "titre": "Preparer calendrier fiscal 2025",
+          "statut": "a_faire",
+          "resume": "Creer le calendrier des echeances fiscales 2025 pour la SCI. Inclure Decloyer (nouveaux loyers sieges sociaux ODIA).",
+          "duree": "15 min",
+          "partieA": [
+            "Lister les echeances 2025 avec dates",
+            "Ajouter Decloyer (nouveaux loyers en 2025)",
+            "Creer le fichier calendrier",
+            "Documenter les nouveautes par rapport a 2024"
+          ],
+          "partieB": [],
+          "partieC": [],
+          "partieD": [
+            "Fichier cree dans Agent_claude_pour_COMPTA/docs/",
+            "Toutes les dates 2025 listees",
+            "Decloyer inclus avec explication"
+          ],
+          "doneWhen": [
+            "docs/calendrier-fiscal-2025-sci.md cree",
+            "Echeances avec dates precises",
+            "Nouveautes 2025 (Decloyer) documentees"
+          ],
+          "expanded": false
         }
       ],
       "suivi": {
@@ -354,9 +1183,9 @@
       "etapes": [
         {
           "id": "1.1",
-          "titre": "Refactoriser CLAUDE.md de COMPTA",
+          "titre": "Refactoriser CLAUDE.md de COMPTA (role = orchestrateur)",
           "statut": "en_cours",
-          "resume": "Transformer l'agent COMPTA existant en orchestrateur qui delegue l'expertise a ses agents enfants",
+          "resume": "Transformer l'agent COMPTA existant (actuellement expert Odoo/PCG) en orchestrateur qui delegue l'expertise a ses agents enfants (ODOO-19-COMPTA et PGC-EXPERT).",
           "duree": "20 min",
           "partieA": [
             "Lire le CLAUDE.md actuel de Agent_claude_pour_COMPTA",
@@ -369,16 +1198,493 @@
           ],
           "partieC": [],
           "partieD": [
-            "Le CLAUDE.md mentionne le role orchestrateur",
-            "Les agents enfants sont references",
+            "Le CLAUDE.md mentionne le role orchestrateur et non plus expert",
+            "Les agents enfants ODOO-19-COMPTA et PGC-EXPERT sont references",
             "La structure clients/ et protocoles/ est decrite"
           ],
           "doneWhen": [
             "CLAUDE.md de COMPTA reecrit avec role orchestrateur",
-            "References aux agents enfants presentes",
-            "Sous-agents consultants mentionnes",
-            "Structure dossiers documentee"
-          ]
+            "References aux agents enfants (ODOO-19-COMPTA, PGC-EXPERT) presentes",
+            "Sous-agents consultants (consult-odoo, consult-pgc) mentionnes",
+            "Structure dossiers (clients/, protocoles/, docs/) documentee",
+            "SUIVI.md et JOURNAL.md mis a jour"
+          ],
+          "expanded": false
+        },
+        {
+          "id": "1.2",
+          "titre": "Creer agent enfant ODOO-19-COMPTA",
+          "statut": "a_faire",
+          "resume": "Creer l'agent expert Odoo 19 Online (module compta uniquement) avec sa structure de dossiers pour accueillir la documentation officielle et la synthese maison.",
+          "duree": "20 min",
+          "partieA": [
+            "Creer le dossier Agent_claude_pour_ODOO-19-COMPTA/",
+            "Creer CLAUDE.md (expert Odoo 19 module compta)",
+            "Creer .claude/settings.json",
+            "Creer la structure docs/officielle/ et docs/synthese/"
+          ],
+          "partieB": [],
+          "partieC": [],
+          "partieD": [
+            "Le dossier Agent_claude_pour_ODOO-19-COMPTA/ existe",
+            "CLAUDE.md definit le role expert Odoo 19 module compta",
+            "Structure docs/officielle/ et docs/synthese/ creee"
+          ],
+          "doneWhen": [
+            "Dossier Agent_claude_pour_ODOO-19-COMPTA/ cree",
+            "CLAUDE.md present avec role expert Odoo 19 compta",
+            ".claude/settings.json present",
+            "docs/officielle/ et docs/synthese/ crees (vides)",
+            "SUIVI.md et JOURNAL.md mis a jour"
+          ],
+          "expanded": false
+        },
+        {
+          "id": "1.3",
+          "titre": "Creer agent enfant PGC-EXPERT",
+          "statut": "a_faire",
+          "resume": "Creer l'agent expert Plan Comptable General francais avec sa structure de dossiers pour accueillir le PGC officiel (180+ pages) et la synthese maison.",
+          "duree": "20 min",
+          "partieA": [
+            "Creer le dossier Agent_claude_pour_PGC-EXPERT/",
+            "Creer CLAUDE.md (expert normes comptables PCG francais)",
+            "Creer .claude/settings.json",
+            "Creer la structure docs/officielle/ et docs/synthese/"
+          ],
+          "partieB": [],
+          "partieC": [],
+          "partieD": [
+            "Le dossier Agent_claude_pour_PGC-EXPERT/ existe",
+            "CLAUDE.md definit le role expert PCG francais",
+            "Structure docs/officielle/ et docs/synthese/ creee"
+          ],
+          "doneWhen": [
+            "Dossier Agent_claude_pour_PGC-EXPERT/ cree",
+            "CLAUDE.md present avec role expert PCG francais",
+            ".claude/settings.json present",
+            "docs/officielle/ et docs/synthese/ crees (vides)",
+            "SUIVI.md et JOURNAL.md mis a jour"
+          ],
+          "expanded": false
+        },
+        {
+          "id": "1.4",
+          "titre": "Creer sous-agents consultants (consult-odoo.md, consult-pgc.md)",
+          "statut": "a_faire",
+          "resume": "Creer les sous-agents qui permettent a COMPTA d'aller chercher l'information dans les agents enfants ODOO-19-COMPTA et PGC-EXPERT. Mode : citation + reference.",
+          "duree": "20 min",
+          "partieA": [
+            "Lire les sous-agents consultants existants dans Agent_claude_pour_CEO-ODIA-HOLDING/.claude/agents/ (s'inspirer du modele)",
+            "Creer .claude/agents/ dans Agent_claude_pour_COMPTA",
+            "Creer consult-odoo.md (explore ODOO-19-COMPTA, cite + reference)",
+            "Creer consult-pgc.md (explore PGC-EXPERT, cite + reference)"
+          ],
+          "partieB": [],
+          "partieC": [],
+          "partieD": [
+            ".claude/agents/ existe dans COMPTA",
+            "consult-odoo.md definit le mode citation + reference",
+            "consult-pgc.md definit le mode citation + reference",
+            "Les chemins vers les agents enfants sont corrects",
+            "Le format est coherent avec les consultants du CEO"
+          ],
+          "doneWhen": [
+            "Dossier .claude/agents/ cree dans COMPTA",
+            "consult-odoo.md present avec mode citation + reference (inspire du modele CEO)",
+            "consult-pgc.md present avec mode citation + reference (inspire du modele CEO)",
+            "SUIVI.md et JOURNAL.md mis a jour"
+          ],
+          "expanded": false
+        },
+        {
+          "id": "1.5",
+          "titre": "Mettre a jour agents-index-filiales.md de AI_DIGITAL",
+          "statut": "a_faire",
+          "resume": "Mettre a jour l'index des agents enfants de ODIA-AI_DIGITAL pour refleter la nouvelle architecture (COMPTA orchestrateur + ODOO-19-COMPTA + PGC-EXPERT).",
+          "duree": "15 min",
+          "partieA": [
+            "Lire agents-index-filiales.md actuel",
+            "Ajouter ODOO-19-COMPTA et PGC-EXPERT comme agents enfants de COMPTA",
+            "Mettre a jour la hierarchie visuelle",
+            "Mettre a jour les statistiques"
+          ],
+          "partieB": [],
+          "partieC": [],
+          "partieD": [
+            "agents-index-filiales.md liste les 4 agents (COMPTA, ODOO-19-COMPTA, PGC-EXPERT, QUOTATION-PATIENT)",
+            "La hierarchie montre COMPTA comme parent de ODOO et PGC",
+            "Les statistiques sont correctes"
+          ],
+          "doneWhen": [
+            "agents-index-filiales.md mis a jour avec nouvelle architecture",
+            "Hierarchie COMPTA > ODOO-19-COMPTA + PGC-EXPERT visible",
+            "Statistiques mises a jour (4 agents enfants)",
+            "SUIVI.md et JOURNAL.md mis a jour"
+          ],
+          "expanded": false
+        },
+        {
+          "id": "2.1",
+          "titre": "Identifier les sources de doc Odoo 19",
+          "statut": "a_faire",
+          "resume": "Rechercher et lister toutes les sources de documentation Odoo 19 Online pertinentes pour le module comptabilite (site officiel, API, tutoriels, forums).",
+          "duree": "20 min",
+          "partieA": [
+            "Rechercher la doc officielle Odoo 19 (odoo.com/documentation)",
+            "Identifier la section module comptabilite",
+            "Rechercher la doc API Odoo 19",
+            "Identifier les tutoriels/guides officiels"
+          ],
+          "partieB": [],
+          "partieC": [],
+          "partieD": [
+            "Liste des sources avec URLs documentee",
+            "Priorite des sources definie (officielle > communautaire)",
+            "Format de telechargement identifie (HTML, PDF, etc.)"
+          ],
+          "doneWhen": [
+            "Liste des sources Odoo 19 module compta creee",
+            "URLs verifiees et accessibles",
+            "Plan de recuperation defini (quoi telecharger, dans quel ordre)",
+            "SUIVI.md et JOURNAL.md mis a jour"
+          ],
+          "expanded": false
+        },
+        {
+          "id": "2.2",
+          "titre": "Telecharger/copier la doc officielle module comptabilite",
+          "statut": "a_faire",
+          "resume": "Recuperer la documentation officielle Odoo 19 pour le module comptabilite et la stocker dans docs/officielle/ de l'agent ODOO-19-COMPTA.",
+          "duree": "25 min",
+          "partieA": [
+            "Acceder aux URLs identifiees en 2.1",
+            "Convertir/copier le contenu en markdown"
+          ],
+          "partieB": [
+            "Valider les pages a recuperer",
+            "Decider du decoupage (un fichier par section ou tout en un)",
+            "Verifier que le contenu recupere est complet"
+          ],
+          "partieC": [
+            "Telecharger manuellement les PDFs si necessaire",
+            "Fournir les fichiers si acces restreint"
+          ],
+          "partieD": [
+            "docs/officielle/ contient la doc Odoo",
+            "Couverture : navigation, ecritures, journaux, rapports, cloture",
+            "Index des fichiers cree"
+          ],
+          "doneWhen": [
+            "Doc Odoo 19 module compta dans docs/officielle/",
+            "Index _index.md cree listant tous les fichiers",
+            "Couverture verifiee (pas de section majeure manquante)",
+            "SUIVI.md et JOURNAL.md mis a jour"
+          ],
+          "expanded": false
+        },
+        {
+          "id": "2.3",
+          "titre": "Creer la synthese maison Odoo",
+          "statut": "a_faire",
+          "resume": "Creer une documentation simplifiee et operationnelle pour le module compta Odoo 19, adaptee aux besoins specifiques (liberaux de sante, operations courantes).",
+          "duree": "25 min",
+          "partieA": [
+            "Analyser la doc officielle recuperee",
+            "Identifier les fonctions cles a documenter"
+          ],
+          "partieB": [
+            "Definir les sections de la synthese (navigation, ecritures courantes, etc.)",
+            "Valider le niveau de detail (astuces, raccourcis, pieges)",
+            "Rediger ensemble les sections prioritaires"
+          ],
+          "partieC": [
+            "Apporter ton experience Odoo (SCI 2024) pour enrichir la synthese"
+          ],
+          "partieD": [
+            "docs/synthese/ contient au moins 3 fichiers",
+            "Chaque fichier est actionnable (pas juste theorique)",
+            "Les references a la doc officielle sont presentes"
+          ],
+          "doneWhen": [
+            "Synthese Odoo creee dans docs/synthese/",
+            "Sections : navigation, ecritures courantes, rapprochement, cloture",
+            "References vers docs/officielle/ pour approfondir",
+            "SUIVI.md et JOURNAL.md mis a jour"
+          ],
+          "expanded": false
+        },
+        {
+          "id": "3.1",
+          "titre": "Recuperer le PGC officiel (PDF ANC ou autre source)",
+          "statut": "a_faire",
+          "resume": "Recuperer le Plan Comptable General officiel francais (ANC) dans sa version la plus recente et le stocker dans l'agent PGC-EXPERT.",
+          "duree": "20 min",
+          "partieA": [
+            "Identifier la source officielle (ANC - Autorite des Normes Comptables)",
+            "Verifier la version la plus recente du PGC"
+          ],
+          "partieB": [
+            "Valider la source a utiliser",
+            "Decider du format de stockage (PDF original + extraction texte)"
+          ],
+          "partieC": [
+            "Telecharger le PDF depuis le site ANC si necessaire",
+            "Placer le fichier dans RESSOURCES/ de la mission"
+          ],
+          "partieD": [
+            "PGC officiel present (PDF ou markdown)",
+            "Version et date identifiees",
+            "Source documentee"
+          ],
+          "doneWhen": [
+            "PGC officiel dans docs/officielle/ de PGC-EXPERT",
+            "Version et source documentees",
+            "Fichier lisible et complet",
+            "SUIVI.md et JOURNAL.md mis a jour"
+          ],
+          "expanded": false
+        },
+        {
+          "id": "3.2",
+          "titre": "Organiser la doc PGC (decoupage par sections, indexation)",
+          "statut": "a_faire",
+          "resume": "Decouper le PGC (180+ pages) en sections logiques et creer un index pour faciliter la recherche et la citation par le sous-agent consult-pgc.",
+          "duree": "25 min",
+          "partieA": [
+            "Analyser la structure du PGC (titres, chapitres, articles)",
+            "Decouper en fichiers par section (classes de comptes, regles, etc.)",
+            "Creer un index _index.md avec liens vers chaque section",
+            "Numeroter les articles pour citation facile"
+          ],
+          "partieB": [],
+          "partieC": [],
+          "partieD": [
+            "docs/officielle/ contient plusieurs fichiers organises",
+            "_index.md permet de naviguer rapidement",
+            "Les articles sont numerotes pour citation"
+          ],
+          "doneWhen": [
+            "PGC decoupe en sections dans docs/officielle/",
+            "Index _index.md cree avec structure claire",
+            "Articles numerotes (ex: Art. 123-4)",
+            "SUIVI.md et JOURNAL.md mis a jour"
+          ],
+          "expanded": false
+        },
+        {
+          "id": "3.3",
+          "titre": "Creer la synthese maison PGC (regles cles, cas frequents liberaux)",
+          "statut": "a_faire",
+          "resume": "Creer une documentation simplifiee du PCG adaptee aux professionnels de sante liberaux : regles cles, comptes les plus utilises, cas frequents.",
+          "duree": "25 min",
+          "partieA": [
+            "Identifier les regles PCG les plus utilisees pour liberaux",
+            "Lister les comptes frequents (honoraires, charges, vehicule, etc.)"
+          ],
+          "partieB": [
+            "Definir les sections prioritaires pour la synthese",
+            "Valider les regles cles a documenter",
+            "Ajouter les cas specifiques liberaux de sante"
+          ],
+          "partieC": [
+            "Apporter les cas concrets rencontres (SCI 2024)"
+          ],
+          "partieD": [
+            "docs/synthese/ contient au moins 3 fichiers",
+            "Comptes frequents liberaux documentes",
+            "References vers docs/officielle/ (articles precis)"
+          ],
+          "doneWhen": [
+            "Synthese PGC creee dans docs/synthese/",
+            "Sections : comptes liberaux, regles cles, cas frequents",
+            "Citations avec numeros d'articles vers officielle/",
+            "SUIVI.md et JOURNAL.md mis a jour"
+          ],
+          "expanded": false
+        },
+        {
+          "id": "4.1",
+          "titre": "Lister les docs manquantes",
+          "statut": "a_faire",
+          "resume": "Identifier toute documentation supplementaire necessaire pour etre autonome sans expert-comptable : obligations fiscales, declarations, specificites liberaux.",
+          "duree": "25 min",
+          "partieA": [
+            "Lister les obligations comptables/fiscales des liberaux de sante",
+            "Identifier les declarations obligatoires (2035, 2065, 2033, TVA, etc.)",
+            "Rechercher les specificites liberaux de sante (exonerations, regimes)"
+          ],
+          "partieB": [
+            "Valider la liste des docs necessaires",
+            "Prioriser (indispensable vs nice-to-have)",
+            "Identifier les sources officielles (impots.gouv, URSSAF, etc.)"
+          ],
+          "partieC": [
+            "Ajouter les docs que tu as deja utilisees pour la SCI"
+          ],
+          "partieD": [
+            "Liste exhaustive des docs necessaires creee",
+            "Priorites definies",
+            "Sources identifiees pour chaque doc"
+          ],
+          "doneWhen": [
+            "Liste des docs complementaires dans RESSOURCES/liste-docs-complementaires.md",
+            "Priorites : P1 (indispensable), P2 (utile), P3 (optionnel)",
+            "Sources officielles identifiees",
+            "SUIVI.md et JOURNAL.md mis a jour"
+          ],
+          "expanded": false
+        },
+        {
+          "id": "4.2",
+          "titre": "Recuperer et organiser les docs complementaires identifiees",
+          "statut": "a_faire",
+          "resume": "Recuperer les documentations prioritaires (P1) identifiees en 4.1 et les organiser dans l'agent approprie (PGC-EXPERT ou nouveau dossier docs/).",
+          "duree": "25 min",
+          "partieA": [
+            "Acceder aux sources officielles identifiees",
+            "Convertir/extraire le contenu pertinent"
+          ],
+          "partieB": [
+            "Decider ou stocker chaque doc (PGC-EXPERT, COMPTA, ou nouveau dossier)",
+            "Valider le contenu recupere",
+            "Decider si synthese necessaire"
+          ],
+          "partieC": [
+            "Telecharger manuellement si acces restreint",
+            "Fournir les docs deja en ta possession"
+          ],
+          "partieD": [
+            "Toutes les docs P1 sont recuperees",
+            "Docs organisees dans le bon dossier",
+            "Index mis a jour si necessaire"
+          ],
+          "doneWhen": [
+            "Docs P1 recuperees et stockees",
+            "Organisation claire (un dossier par theme ou tout dans PGC-EXPERT)",
+            "Index mis a jour",
+            "SUIVI.md et JOURNAL.md mis a jour"
+          ],
+          "expanded": false
+        },
+        {
+          "id": "5.1",
+          "titre": "Definir le workflow de realisation d'une compta mensuelle",
+          "statut": "a_faire",
+          "resume": "Documenter le processus complet pour realiser la comptabilite mensuelle d'un client, de la reception des justificatifs a la validation finale.",
+          "duree": "25 min",
+          "partieA": [
+            "Proposer un workflow type base sur les bonnes pratiques"
+          ],
+          "partieB": [
+            "Definir les etapes du workflow (collecte, saisie, verification, validation)",
+            "Definir qui fait quoi (COMPTA, consult-odoo, consult-pgc, toi)",
+            "Definir les points de validation obligatoires",
+            "Documenter le workflow dans COMPTA/docs/workflow-mensuel.md"
+          ],
+          "partieC": [
+            "Apporter ton experience SCI pour ajuster le workflow"
+          ],
+          "partieD": [
+            "Workflow complet de bout en bout",
+            "Roles clairement definis",
+            "Points de validation identifies"
+          ],
+          "doneWhen": [
+            "Workflow mensuel documente dans COMPTA/docs/workflow-mensuel.md",
+            "Etapes : collecte -> saisie -> rapprochement -> verification -> validation",
+            "Roles definis pour chaque etape",
+            "SUIVI.md et JOURNAL.md mis a jour"
+          ],
+          "expanded": false
+        },
+        {
+          "id": "5.2",
+          "titre": "Definir la methode de journalisation (format, frequence, contenu)",
+          "statut": "a_faire",
+          "resume": "Documenter comment tracer les actions comptables dans le journal client mensuel : format, niveau de detail, frequence de mise a jour.",
+          "duree": "20 min",
+          "partieA": [
+            "Proposer un template de journal mensuel"
+          ],
+          "partieB": [
+            "Valider le format du journal (markdown, tableau, etc.)",
+            "Definir le niveau de detail (actions + justifications, pas clic-par-clic)",
+            "Definir quand mettre a jour (apres chaque action ou en fin de session)",
+            "Creer le template dans COMPTA/docs/template-journal-mensuel.md"
+          ],
+          "partieC": [],
+          "partieD": [
+            "Template de journal cree",
+            "Format clair et utilisable",
+            "Niveau de detail approprie"
+          ],
+          "doneWhen": [
+            "Template journal mensuel dans COMPTA/docs/template-journal-mensuel.md",
+            "Format : date, action, justification, reference Odoo",
+            "Niveau de detail valide (pas clic-par-clic)",
+            "SUIVI.md et JOURNAL.md mis a jour"
+          ],
+          "expanded": false
+        },
+        {
+          "id": "5.3",
+          "titre": "Definir la structure dossier client (justificatifs, journal, protocoles)",
+          "statut": "a_faire",
+          "resume": "Documenter la structure standard d'un dossier client dans COMPTA/clients/, incluant l'organisation des justificatifs, journaux et protocoles appliques.",
+          "duree": "20 min",
+          "partieA": [
+            "Proposer une structure de dossier client type"
+          ],
+          "partieB": [
+            "Valider l'arborescence (justificatifs/YYYY-MM/, journal/YYYY-MM.md)",
+            "Definir les metadonnees client (type entite, CA, exercice)",
+            "Creer le template dans COMPTA/docs/template-dossier-client.md"
+          ],
+          "partieC": [],
+          "partieD": [
+            "Structure dossier client documentee",
+            "Arborescence claire et coherente",
+            "Template pret a etre duplique pour chaque client"
+          ],
+          "doneWhen": [
+            "Template structure client dans COMPTA/docs/template-dossier-client.md",
+            "Arborescence : justificatifs/YYYY-MM/, journal/YYYY-MM.md",
+            "Metadonnees client definies (FICHE-CLIENT.md)",
+            "SUIVI.md et JOURNAL.md mis a jour"
+          ],
+          "expanded": false
+        },
+        {
+          "id": "5.4",
+          "titre": "Valider l'ensemble et mettre a jour les criteres de succes",
+          "statut": "a_faire",
+          "resume": "Passer en revue tout ce qui a ete cree, verifier que les criteres de succes de CONTEXTE.md sont remplis, et valider la mission PA-0 comme terminee.",
+          "duree": "15 min",
+          "partieA": [
+            "Lister tous les fichiers crees pendant la mission",
+            "Verifier chaque critere de succes de CONTEXTE.md"
+          ],
+          "partieB": [
+            "Passer en revue chaque critere de succes",
+            "Cocher les criteres remplis",
+            "Identifier les eventuels manques",
+            "Valider la mission comme terminee"
+          ],
+          "partieC": [
+            "Confirmer que tout est fonctionnel (test rapide)"
+          ],
+          "partieD": [
+            "Tous les criteres de succes sont coches",
+            "Aucun manque identifie",
+            "Mission validee"
+          ],
+          "doneWhen": [
+            "CONTEXTE.md : tous les criteres de succes coches [x]",
+            "Aucun manque identifie ou ajoute au backlog",
+            "Mission PA-0 marquee comme terminee",
+            "SUIVI.md et JOURNAL.md finalises"
+          ],
+          "expanded": false
         }
       ],
       "suivi": {
@@ -455,7 +1761,7 @@
           "id": "1.1",
           "titre": "Audit achats materiel",
           "statut": "en_cours",
-          "resume": "Etablir la liste complete du materiel a acheter pour les travaux",
+          "resume": "Etablir la liste complete du materiel a acheter pour les travaux : siphons lavabos, bouchons ventilation fosse, joints, teflon, etc.",
           "duree": "20 min",
           "partieA": [
             "Preparer un template de liste d'achats structure par categorie",
@@ -463,7 +1769,7 @@
           ],
           "partieB": [
             "Completer la liste avec les references/dimensions si connues",
-            "Identifier les elements a verifier sur place",
+            "Identifier les elements a verifier sur place (taille siphons, type bouchons)",
             "Ajouter les consommables (joints, teflon, etc.)"
           ],
           "partieC": [
@@ -476,10 +1782,290 @@
           ],
           "doneWhen": [
             "Fichier liste-achats.md cree dans RESSOURCES/",
-            "Liste organisee par categorie",
+            "Liste organisee par categorie (plomberie, fosse, consommables)",
             "Chaque element a une quantite",
-            "SUIVI.md mis a jour"
-          ]
+            "SUIVI.md mis a jour (etape 1.1 terminee)"
+          ],
+          "expanded": false
+        },
+        {
+          "id": "1.2",
+          "titre": "Checklist outils",
+          "statut": "a_faire",
+          "resume": "Verifier la disponibilite de tous les outils necessaires et preparer ce qu'il faut emporter : outils lourds pour trappes, outillage plomberie.",
+          "duree": "15 min",
+          "partieA": [
+            "Creer une checklist des outils par categorie (trappes, plomberie)",
+            "Lister les outils mentionnes dans le contexte"
+          ],
+          "partieB": [
+            "Parcourir la liste et cocher ce que tu possedes",
+            "Identifier ce qu'il faut emprunter ou louer (marteau-piqueur ?)",
+            "Decider ou ranger les outils pour le depart"
+          ],
+          "partieC": [
+            "Verifier physiquement que tu as chaque outil",
+            "Les regrouper / preparer pour le transport"
+          ],
+          "partieD": [
+            "Tous les outils sont listes avec statut (possede/a emprunter/a louer)",
+            "Aucun outil critique n'est manquant sans solution"
+          ],
+          "doneWhen": [
+            "Fichier checklist-outils.md cree dans RESSOURCES/",
+            "Chaque outil a un statut (OK / a trouver)",
+            "Plan pour les outils manquants (emprunt, location)",
+            "SUIVI.md mis a jour (etape 1.2 terminee)"
+          ],
+          "expanded": false
+        },
+        {
+          "id": "1.3",
+          "titre": "Mail Tropic Elec + demande intervention",
+          "statut": "a_faire",
+          "resume": "Rediger et envoyer un mail a Tropic Elec pour demander une intervention d'installation BMS, avec les informations necessaires.",
+          "duree": "20 min",
+          "partieA": [
+            "Rediger un brouillon de mail professionnel",
+            "Structurer : objet, contexte, demande, disponibilites, coordonnees"
+          ],
+          "partieB": [
+            "Relire et ajuster le brouillon",
+            "Ajouter les details specifiques (adresse Fleurimont, n tel, etc.)",
+            "Preciser les creneaux de disponibilite pour l'intervention"
+          ],
+          "partieC": [
+            "Copier le mail finalise",
+            "L'envoyer depuis ta boite mail",
+            "Confirmer l'envoi"
+          ],
+          "partieD": [
+            "Le mail a ete envoye (confirmation)",
+            "La demande d'intervention est claire",
+            "Tes disponibilites sont mentionnees"
+          ],
+          "doneWhen": [
+            "Brouillon du mail sauvegarde dans RESSOURCES/mail-tropic-elec.md",
+            "Mail envoye a Tropic Elec",
+            "SUIVI.md mis a jour (etape 1.3 terminee)"
+          ],
+          "expanded": false
+        },
+        {
+          "id": "2.1",
+          "titre": "Achats en magasin",
+          "statut": "a_faire",
+          "resume": "Aller au magasin de bricolage avec la liste preparee et acheter tout le materiel necessaire pour les travaux.",
+          "duree": "45 min",
+          "partieA": [],
+          "partieB": [
+            "Verifier que la liste est complete et imprimee/sur telephone (avant depart)",
+            "Pointer ce qui a ete achete vs liste (apres retour)"
+          ],
+          "partieC": [
+            "Te rendre au magasin de bricolage",
+            "Acheter chaque element de la liste",
+            "Demander conseil au vendeur si doute sur une reference",
+            "Conserver le ticket de caisse"
+          ],
+          "partieD": [
+            "Tous les elements de la liste sont achetes (ou alternative trouvee)",
+            "Le materiel est pret pour le transport a Fleurimont"
+          ],
+          "doneWhen": [
+            "Tous les elements de liste-achats.md sont coches ou avec alternative",
+            "Ticket de caisse conserve",
+            "SUIVI.md mis a jour (etape 2.1 terminee)"
+          ],
+          "expanded": false
+        },
+        {
+          "id": "3.1",
+          "titre": "Tondre le gazon",
+          "statut": "a_faire",
+          "resume": "Tondre le gazon pour degager l'acces a la fosse septique avant le controle SPANC.",
+          "duree": "45 min",
+          "partieA": [],
+          "partieB": [],
+          "partieC": [
+            "Sortir la tondeuse",
+            "Tondre la zone autour de la fosse en priorite",
+            "Tondre le reste du jardin si besoin",
+            "Ramasser/evacuer l'herbe coupee",
+            "Ranger la tondeuse"
+          ],
+          "partieD": [
+            "L'acces a la fosse est degage et visible",
+            "Le controleur pourra circuler sans difficulte"
+          ],
+          "doneWhen": [
+            "Gazon tondu autour de la fosse",
+            "Acces aux trappes visible et degage",
+            "SUIVI.md mis a jour (etape 3.1 terminee)"
+          ],
+          "expanded": false
+        },
+        {
+          "id": "3.2",
+          "titre": "Ouvrir les trappes de fosse",
+          "statut": "a_faire",
+          "resume": "Ouvrir les trappes de la fosse septique pour permettre le controle SPANC. Utiliser les outils lourds si necessaire.",
+          "duree": "30 min",
+          "partieA": [],
+          "partieB": [],
+          "partieC": [
+            "Localiser les trappes de la fosse",
+            "Degager la terre/vegetation autour si besoin",
+            "Utiliser pied de biche + massette pour soulever",
+            "Si bloque : utiliser masse ou marteau-piqueur",
+            "Verifier que les trappes restent ouvertes/accessibles"
+          ],
+          "partieD": [
+            "Toutes les trappes sont ouvertes",
+            "Le controleur pourra voir l'interieur de la fosse"
+          ],
+          "doneWhen": [
+            "Trappes de fosse ouvertes et accessibles",
+            "Aucun obstacle pour le controleur",
+            "SUIVI.md mis a jour (etape 3.2 terminee)"
+          ],
+          "expanded": false
+        },
+        {
+          "id": "3.3",
+          "titre": "Verifier systeme ventilation fosse",
+          "statut": "a_faire",
+          "resume": "Analyser le systeme de ventilation actuel de la fosse pour determiner exactement ce qu'il faut installer (type de bouchons, emplacement).",
+          "duree": "20 min",
+          "partieA": [],
+          "partieB": [
+            "Decider si le materiel achete convient (apres ton diagnostic)",
+            "Adapter le plan si besoin d'autre chose"
+          ],
+          "partieC": [
+            "Examiner les sorties de ventilation de la fosse",
+            "Mesurer les diametres si necessaire",
+            "Identifier ou installer les 2 bouchons",
+            "Verifier que le materiel achete correspond"
+          ],
+          "partieD": [
+            "Le systeme actuel est compris",
+            "Les bouchons achetes sont compatibles (ou alternative identifiee)"
+          ],
+          "doneWhen": [
+            "Diagnostic du systeme ventilation fait",
+            "Confirmation que les bouchons achetes conviennent",
+            "SUIVI.md mis a jour (etape 3.3 terminee)"
+          ],
+          "expanded": false
+        },
+        {
+          "id": "3.4",
+          "titre": "Installer 2 bouchons ventilation",
+          "statut": "a_faire",
+          "resume": "Installer les 2 nouveaux bouchons de ventilation sur la fosse septique selon le diagnostic fait a l'etape precedente.",
+          "duree": "30 min",
+          "partieA": [],
+          "partieB": [],
+          "partieC": [
+            "Preparer le materiel (bouchons, outils)",
+            "Installer le premier bouchon",
+            "Installer le second bouchon",
+            "Verifier l'etancheite/la bonne pose"
+          ],
+          "partieD": [
+            "Les 2 bouchons sont installes",
+            "Ils sont stables et bien fixes"
+          ],
+          "doneWhen": [
+            "2 bouchons de ventilation installes",
+            "Installation verifiee visuellement",
+            "SUIVI.md mis a jour (etape 3.4 terminee)"
+          ],
+          "expanded": false
+        },
+        {
+          "id": "3.5",
+          "titre": "Reparer 2 fuites siphons",
+          "statut": "a_faire",
+          "resume": "Remplacer les siphons des 2 lavabos de la salle de bain pour stopper les fuites.",
+          "duree": "40 min",
+          "partieA": [],
+          "partieB": [],
+          "partieC": [
+            "Couper l'eau ou fermer le robinet",
+            "Placer un seau sous le premier lavabo",
+            "Demonter l'ancien siphon",
+            "Installer le nouveau siphon avec joints + teflon",
+            "Repeter pour le second lavabo",
+            "Rouvrir l'eau et tester l'etancheite"
+          ],
+          "partieD": [
+            "Aucune fuite visible sous les 2 lavabos",
+            "L'eau s'ecoule correctement"
+          ],
+          "doneWhen": [
+            "2 siphons remplaces",
+            "Test d'etancheite passe (pas de fuite)",
+            "SUIVI.md mis a jour (etape 3.5 terminee)"
+          ],
+          "expanded": false
+        },
+        {
+          "id": "4.1",
+          "titre": "Coordonner passage Tropic Elec",
+          "statut": "a_faire",
+          "resume": "Organiser concretement le passage de Tropic Elec : confirmer la date et s'assurer qu'une personne (toi ou ta mere) sera presente.",
+          "duree": "20 min",
+          "partieA": [],
+          "partieB": [
+            "Verifier si Tropic Elec a repondu au mail",
+            "Definir qui sera present (toi ou ta mere)",
+            "Preparer le message pour ta mere si c'est elle"
+          ],
+          "partieC": [
+            "Relancer Tropic Elec si pas de reponse",
+            "Appeler ta mere pour confirmer sa disponibilite",
+            "Confirmer le RDV par mail/telephone"
+          ],
+          "partieD": [
+            "Date d'intervention Tropic Elec confirmee",
+            "Personne presente identifiee et prevenue"
+          ],
+          "doneWhen": [
+            "Date de passage Tropic Elec fixee",
+            "Personne presente confirmee (toi ou mere)",
+            "SUIVI.md mis a jour (etape 4.1 terminee)"
+          ],
+          "expanded": false
+        },
+        {
+          "id": "4.2",
+          "titre": "Verification finale avant SPANC",
+          "statut": "a_faire",
+          "resume": "Dernier check avant le controle SPANC du 9 fevrier : s'assurer que tout est en ordre (fosse accessible, ventilation OK, maison presentable).",
+          "duree": "15 min",
+          "partieA": [],
+          "partieB": [
+            "Parcourir la checklist finale ensemble",
+            "Confirmer que tout est pret"
+          ],
+          "partieC": [
+            "Verifier que les trappes sont toujours ouvertes/accessibles",
+            "Verifier que le gazon n'a pas trop repousse",
+            "Verifier les bouchons de ventilation",
+            "S'assurer d'etre disponible le 9 fevrier"
+          ],
+          "partieD": [
+            "Tous les criteres de succes du CONTEXTE.md sont valides",
+            "Tu es pret pour le passage du controleur"
+          ],
+          "doneWhen": [
+            "Checklist finale validee",
+            "Tous les travaux confirmes OK",
+            "SUIVI.md mis a jour (mission terminee ou prete pour SPANC)"
+          ],
+          "expanded": false
         }
       ],
       "suivi": {
